@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rifatahammed/rifatahammed.github.io.git/static/css/main.b5bc7200.chunk.css",
+    "main.js": "/rifatahammed/rifatahammed.github.io.git/static/js/main.46b1ff7c.chunk.js",
+    "main.js.map": "/rifatahammed/rifatahammed.github.io.git/static/js/main.46b1ff7c.chunk.js.map",
+    "runtime-main.js": "/rifatahammed/rifatahammed.github.io.git/static/js/runtime-main.5988ae0a.js",
+    "runtime-main.js.map": "/rifatahammed/rifatahammed.github.io.git/static/js/runtime-main.5988ae0a.js.map",
+    "static/js/2.61bd3125.chunk.js": "/rifatahammed/rifatahammed.github.io.git/static/js/2.61bd3125.chunk.js",
+    "static/js/2.61bd3125.chunk.js.map": "/rifatahammed/rifatahammed.github.io.git/static/js/2.61bd3125.chunk.js.map",
+    "static/js/3.cf0b9ea1.chunk.js": "/rifatahammed/rifatahammed.github.io.git/static/js/3.cf0b9ea1.chunk.js",
+    "static/js/3.cf0b9ea1.chunk.js.map": "/rifatahammed/rifatahammed.github.io.git/static/js/3.cf0b9ea1.chunk.js.map",
+    "index.html": "/rifatahammed/rifatahammed.github.io.git/index.html",
+    "static/css/main.b5bc7200.chunk.css.map": "/rifatahammed/rifatahammed.github.io.git/static/css/main.b5bc7200.chunk.css.map",
+    "static/js/2.61bd3125.chunk.js.LICENSE.txt": "/rifatahammed/rifatahammed.github.io.git/static/js/2.61bd3125.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5988ae0a.js",
+    "static/js/2.61bd3125.chunk.js",
+    "static/css/main.b5bc7200.chunk.css",
+    "static/js/main.46b1ff7c.chunk.js"
+  ]
+}
