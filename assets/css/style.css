@@ -945,6 +945,18 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
+.timeline-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.timeline-text li {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
 
 /**
  * skills 
