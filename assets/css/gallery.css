@@ -1,0 +1,71 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+.gallery {
+  max-width: 100%; /* Makes sure the gallery width does not exceed the container */
+  overflow: hidden; /* Hides any overflowing content */
+  margin: 0 auto; /* Centers the gallery horizontally */
+  padding: 0 15px; /* Adds some space on the sides */
+}
+.gallery-track {
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(200px, 1fr)
+  ); /* Create flexible columns */
+  gap: 0.25rem;
+  /* padding: 0.25rem; */
+  will-change: transform;
+  overflow: hidden; /* Prevents overflow from content */
+}
+
+.card {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+
+  & .card-image-wrapper {
+    height: 135%;
+    will-change: transform;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (width < 800px) {
+  .gallery-track {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(150px, 1fr)
+    ); /* Makes columns smaller on smaller screens */
+  }
+
+  .card {
+    height: auto; /* Let it grow based on content */
+    aspect-ratio: 4 / 3; /* Optional: control proportions */
+  }
+
+  .card-image-wrapper {
+    height: 100%; /* Prevent it from exceeding parent height */
+  }
+
+  .card-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+@media (width < 550px) {
+  .gallery-track {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
