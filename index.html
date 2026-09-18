@@ -1,2194 +1,751 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RIFFF</title>
-
-    <!--
-    - favicon
-  -->
-    <link
-      rel="shortcut icon"
-      href="./assets/images/logo.ico"
-      type="image/x-icon"
-    />
-
-    <!--
-    - custom css link
-  -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/gallery.css" />
-
-    <!--
-    - google font link
-  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <!--
-    - #MAIN
-  -->
-
-    <main>
-      <!--
-      - #SIDEBAR
-    -->
-
-      <aside class="sidebar" data-sidebar>
-        <div class="sidebar-info">
-          <figure class="avatar-box">
-            <img
-              src="./assets/images/my-avatar.png"
-              alt="Rifat Ahammed"
-              width="80"
-            />
-          </figure>
-
-          <div class="info-content">
-            <h1 class="name" title="Rifat Ahammed">Rifat Ahammed</h1>
-
-            <p class="title">UE Dev , Game Designer</p>
-          </div>
-
-          <button class="info_more-btn" data-sidebar-btn>
-            <span>Show Contacts</span>
-
-            <ion-icon name="chevron-down"></ion-icon>
-          </button>
-        </div>
-
-        <div class="sidebar-info_more">
-          <div class="separator"></div>
-
-          <ul class="contacts-list">
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
-
-                <a href="mailto:reardj007@gmail.com" class="contact-link"
-                  >reardj007@gmail.com</a
-                >
-              </div>
-            </li>
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Email</p>
-
-                <a href="mailto:rifatahammed@yahoo.com" class="contact-link"
-                  >rifatahammed@yahoo.com</a
-                >
-              </div>
-            </li>
-
-            <!-- <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="phone-portrait-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Phone</p>
-
-                <a href="tel:+12133522795" class="contact-link"
-                  >+1 (213) 352-2795</a
-                >
-              </div>
-            </li> -->
-
-            <!-- <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="calendar-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Birthday</p>
-
-                <time datetime="1982-06-23">June 23, 1982</time>
-              </div>
-            </li> -->
-
-            <li class="contact-item">
-              <div class="icon-box">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
-
-              <div class="contact-info">
-                <p class="contact-title">Location</p>
-
-                <address>Bangladesh, Asia</address>
-              </div>
-            </li>
-          </ul>
-
-          <div class="separator"></div>
-
-          <ul class="social-list">
-            <li class="social-item">
-              <a
-                href="https://www.facebook.com/rifatahammed"
-                target="_blank"
-                class="social-link"
-              >
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a
-                href="https://www.linkedin.com/in/rifat-ahammed"
-                target="_blank"
-                class="social-link"
-              >
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <a
-                href="https://rifatahammed.blogspot.com/"
-                target="_blank"
-                class="social-link"
-              >
-                <ion-icon name="globe-outline"></ion-icon>
-              </a>
-            </li>
-            <li class="social-item">
-              <a
-                href="https://www.youtube.com/@rifat.ahammed"
-                target="_blank"
-                class="social-link"
-              >
-                <ion-icon name="logo-youtube"></ion-icon>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </aside>
-
-      <!--
-      - #main-content
-    -->
-
-      <div class="main-content">
-        <!--
-        - #NAVBAR
-      -->
-
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Resume</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
-            </li>
-
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Gallery</button>
-            </li>
-
-            <!-- <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contact</button>
-            </li> -->
-          </ul>
-        </nav>
-
-        <!--
-        - #ABOUT
-      -->
-
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">About me</h2>
-          </header>
-
-          <section class="about-text">
-            <p>
-              Hiiiiiiiiiiii, this is Rifff, a game design enthusiast, currently
-              working as The Lead Unreal Developer for Attrito - M7-PRODUCTION
-              LTD. Love to play games, music.
-            </p>
-
-            <p>
-              I love to listen to people. That's why I run around, going to
-              different places, meeting different people, and engaging in
-              different activities. To me, Everything people do and say seems
-              like part of a big game. We are all NPCs in it. So I run around
-              again...
-            </p>
-          </section>
-
-          <!--
-          - service
-        -->
-
-          <section class="service">
-            <h3 class="h3 service-title">What i'm doing</h3>
-
-            <ul class="service-list">
-              <a href="https://rifff.itch.io/" target="_blank">
-                <li class="service-item">
-                  <div class="service-icon-box">
-                    <img
-                      src="./assets/images/games.png"
-                      alt="Web development icon"
-                      width="40"
-                    />
-                  </div>
-
-                  <div class="service-content-box">
-                    <h4 class="h4 service-item-title">ITCH . IO</h4>
-
-                    <p class="service-item-text">
-                      Leisure Game projects to play with FnF
-                    </p>
-                  </div>
-                </li>
-              </a>
-
-              <a href="https://riff.artstation.com/" target="_blank">
-                <li class="service-item">
-                  <div class="service-icon-box">
-                    <img
-                      src="./assets/images/artstation.png
-                "
-                      alt="design icon"
-                      width="40"
-                    />
-                  </div>
-
-                  <div class="service-content-box">
-                    <h4 class="h4 service-item-title">Artstation</h4>
-
-                    <p class="service-item-text">
-                      Game arts , designs , Diagrams
-                    </p>
-                  </div>
-                </li>
-              </a>
-
-              <a href="https://soundcloud.com/rifff_at" target="_blank">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/SoundCloud.png"
-                    alt="mobile app icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">SoundCloud</h4>
-
-                  <p class="service-item-text">
-                    Composed tracks with FL Studio
-                  </p>
-                </div>
-              </li>
-            </a>
-
-            <a href="https://www.youtube.com/@rifffz" target="_blank">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/stream.png"
-                    alt="camera icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">STREAM</h4>
-
-                  <p class="service-item-text">
-                    I got OBS n GeForce Installed :P
-                  </p>
-                </div>
-              </li>
-            </a>
-
-            <a href="https://www.shadertoy.com/user/RIFFF" target="_blank">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/games.png"
-                    alt="camera icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">SHADER TOY</h4>
-
-                  <p class="service-item-text">
-                    playin pxls
-                  </p>
-                </div>
-              </li>
-            </a>
-
-
-
-            
-            <a href="https://public.tableau.com/app/profile/rifat.ahammed4331/vizzes" target="_blank">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/tableua.png"
-                    alt="camera icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Tableua</h4>
-
-                  <p class="service-item-text">Exploring Dashboard is fun</p>
-                </div>
-              </li>
-            </a>
-            
-            <a href="https://github.com/rifatahammed" target="_blank">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/images/github.png"
-                    alt="camera icon"
-                    width="40"
-                  />
-                </div>
-
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">GITHUB</h4>
-
-                  <p class="service-item-text">The True Savior</p>
-                </div>
-              </li>
-            </a>
-            
-            </ul>
-          </section>
-
-          <!--
-          - service
-        -->
-
-          <section class="skillsnew">
-            <h3 class="h3 skillsnew-title">My Skills</h3>
-
-            <ul class="skillsnew-list">
-              <li class="skillsnew-item">
-                <div class="skillsnew-content-box">
-                  <h4 class="h4 skillsnew-item-title">UNREAL ENGINE</h4>
-                </div>
-              </li>
-              <li class="skillsnew-item">
-                <div class="skillsnew-content-box">
-                  <h4 class="h4 skillsnew-item-title">UNITY</h4>
-                </div>
-              </li>
-              <li class="skillsnew-item">
-                <div class="skillsnew-content-box">
-                  <h4 class="h4 skillsnew-item-title">C++</h4>
-                </div>
-              </li>
-              <li class="skillsnew-item">
-                <div class="skillsnew-content-box">
-                  <h4 class="h4 skillsnew-item-title">PYTHON</h4>
-                </div>
-              </li>
-              <li class="skillsnew-item">
-                <div class="skillsnew-content-box">
-                  <h4 class="h4 skillsnew-item-title">Data Analysis</h4>
-                </div>
-              </li>
-              <li class="skillsnew-item">
-                <div class="skillsnew-content-box">
-                  <h4 class="h4 skillsnew-item-title">Machine learning</h4>
-                </div>
-              </li>
-              <li class="skillsnew-item">
-                <div class="skillsnew-content-box">
-                  <h4 class="h4 skillsnew-item-title">FL Studio</h4>
-                </div>
-              </li>
-              <li class="skillsnew-item">
-                <div class="skillsnew-content-box">
-                  <h4 class="h4 skillsnew-item-title">DaVinci Resolve</h4>
-                </div>
-              </li>
-              <li class="skillsnew-item">
-                <div class="skillsnew-content-box">
-                  <h4 class="h4 skillsnew-item-title">MERN Stack</h4>
-                </div>
-              </li>
-              <li class="skillsnew-item">
-                <div class="skillsnew-content-box">
-                  <h4 class="h4 skillsnew-item-title">Blender</h4>
-                </div>
-              </li>
-              <li class="skillsnew-item">
-                <div class="skillsnew-content-box">
-                  <h4 class="h4 skillsnew-item-title">Substance Designer</h4>
-                </div>
-              </li>
-              <li class="skillsnew-item">
-                <div class="skillsnew-content-box">
-                  <h4 class="h4 skillsnew-item-title">Javascript</h4>
-                </div>
-              </li>
-              <li class="skillsnew-item">
-                <div class="skillsnew-content-box">
-                  <h4 class="h4 skillsnew-item-title">Typescript</h4>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <!-- <section class="skill">
-            <h3 class="h3 skills-title">My skills</h3>
-
-            <ul class="skills-list content-card">
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Games</h5>
-                  <data value="80">80%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 80%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Graphic design</h5>
-                  <data value="70">70%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 70%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">Branding</h5>
-                  <data value="90">90%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 90%"></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">WordPress</h5>
-                  <data value="50">50%</data>
-                </div>
-
-                <div class="skill-progress-bg">
-                  <div class="skill-progress-fill" style="width: 50%"></div>
-                </div>
-              </li>
-            </ul>
-          </section> -->
-
-          <!--
-          - clients
-        -->
-
-          <!-- <section class="clients">
-            <h3 class="h3 clients-title">Clients</h3>
-
-            <ul class="clients-list has-scrollbar">
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-1-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-2-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-3-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-4-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-5-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-
-              <li class="clients-item">
-                <a href="#">
-                  <img
-                    src="./assets/images/logo-6-color.png"
-                    alt="client logo"
-                  />
-                </a>
-              </li>
-            </ul>
-          </section> -->
-        </article>
-
-        <!--
-        - #RESUME
-      -->
-
-        <article class="resume" data-page="resume">
-          <header>
-            <h2 class="h2 article-title">Resume</h2>
-          </header>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Experience</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Lead Unreal Developer, Quest Designer
-                </h4>
-                <p class="timeline-text">ATTRITO - M7-PRODUCTION LTD</p>
-                <span>2022 — Present</span>
-
-                <ul class="timeline-text">
-                  <li>- Design and develop quests and missions</li>
-                  <li>
-                    - Develop different game mechanisms and vertical slices
-                  </li>
-                  <li>- Develop pipelines for cross-team collaboration</li>
-                  <li>- Work on Unreal Engine R&D & optimizations</li>
-                  <br />
-                  <li>ZERO HOUR:</li>
-                  <li>
-                    - Ensure a standard player experience through continuous
-                    testing
-                  </li>
-                  <li>- Balance and optimize in-game maps</li>
-                  <li>- Find and resolve bugs as part of the QA team</li>
-                </ul>
-              </li>
-
-              <!-- <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Gameser</h4>
-
-                <span>2010 — 2013</span>
-
-                <p class="timeline-text">
-                  Nemo enims ipsam voluptatem, blanditiis praesentium voluptum
-                  delenit atque corrupti, quos dolores et quas molestias
-                  exceptur.
-                </p>
-              </li> -->
-            </ol>
-          </section>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Volunteering</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Academic Team Member</h4>
-                <p class="timeline-text">Bangladesh Mathematical Olympiad</p>
-                <span>2017 — 2019</span>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Academic Team Member</h4>
-                <p class="timeline-text">
-                  Society for the Popularization of Science, Bangladesh |
-                  বাংলাদেশ বিজ্ঞান জনপ্রিয়করণ সমিতি
-                </p>
-                <span>2017 — 2020</span>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Trainer</h4>
-                <p class="timeline-text">
-                  Children Science Congress, Bangladesh
-                </p>
-                <span>2017 — 2020</span>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">General Member</h4>
-                <p class="timeline-text">NSU ACM Student Chapter</p>
-                <span>2017 — 2020</span>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Volunteer</h4>
-                <p class="timeline-text">Bangladesh Red Crescent Society</p>
-                <span>2009 — 2012</span>
-              </li>
-            </ol>
-          </section>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Education</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Computer Science and Engineering
-                </h4>
-                <p class="timeline-text">North South University</p>
-                <span>2017 — 2021</span>
-              </li>
-
-              <li class="timeline-item">
-                <p class="timeline-text">Noakhali Govt. College</p>
-                <span>2013 — 2015</span>
-              </li>
-
-              <li class="timeline-item">
-                <p class="timeline-text">Noakhali Zilla School</p>
-                <span>2007 — 2013</span>
-              </li>
-            </ol>
-          </section>
-          <!-- Embed LinkedIn Recommendations -->
-          <!-- <div class='sk-ww-linkedin-recommendations' data-embed-id='25567572'></div><script src='https://widgets.sociablekit.com/linkedin-recommendations/widget.js' defer></script> -->
-          <!--
-          - testimonials
-        -->
-
-          <!-- <section class="testimonials">
-            <h3 class="h3 testimonials-title">Testimonials</h3>
-
-            <ul class="testimonials-list has-scrollbar">
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-1.png"
-                      alt="Daniel lewis"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Daniel lewis
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-2.png"
-                      alt="Jessica miller"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Jessica miller
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-3.png"
-                      alt="Emily evans"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Emily evans
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="testimonials-item">
-                <div class="content-card" data-testimonials-item>
-                  <figure class="testimonials-avatar-box">
-                    <img
-                      src="./assets/images/avatar-4.png"
-                      alt="Henry william"
-                      width="60"
-                      data-testimonials-avatar
-                    />
-                  </figure>
-
-                  <h4
-                    class="h4 testimonials-item-title"
-                    data-testimonials-title
-                  >
-                    Henry william
-                  </h4>
-
-                  <div class="testimonials-text" data-testimonials-text>
-                    <p>
-                      Richard was hired to create a corporate identity. We were
-                      very pleased with the work done. She has a lot of
-                      experience and is very concerned about the needs of
-                      client. Lorem ipsum dolor sit amet, ullamcous cididt
-                      consectetur adipiscing elit, seds do et eiusmod tempor
-                      incididunt ut laborels dolore magnarels alia.
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </section> -->
-
-          <!--
-        - testimonials modal
-      -->
-
-          <div class="modal-container" data-modal-container>
-            <div class="overlay" data-overlay></div>
-
-            <section class="testimonials-modal">
-              <button class="modal-close-btn" data-modal-close-btn>
-                <ion-icon name="close-outline"></ion-icon>
-              </button>
-
-              <div class="modal-img-wrapper">
-                <figure class="modal-avatar-box">
-                  <img
-                    src="./assets/images/avatar-1.png"
-                    alt="Daniel lewis"
-                    width="80"
-                    data-modal-img
-                  />
-                </figure>
-
-                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
-              </div>
-
-              <div class="modal-content">
-                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-                <time datetime="2021-06-14">14 June, 2021</time>
-
-                <div data-modal-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were
-                    very pleased with the work done. She has a lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum
-                    dolor sit amet, ullamcous cididt consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels
-                    dolore magnarels alia.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </div>
-        </article>
-
-        <!--
-        - #PORTFOLIO
-      -->
-
-        <article class="portfolio" data-page="portfolio">
-          <header>
-            <h2 class="h2 article-title">Portfolio</h2>
-          </header>
-
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Games</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Vertical-Slices</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Material</button>
-              </li>
-              <li class="filter-item">
-                <button data-filter-btn>Compose</button>
-              </li>
-              <li class="filter-item">
-                <button data-filter-btn>3D-Modeling</button>
-              </li>
-              <!-- <li class="filter-item">
-                <button data-filter-btn>Scientific_Paper</button>
-              </li> -->
-            </ul>
-
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
-                  Select category
-                </div>
-
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
-
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Games</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Vertical-Slices</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Material</button>
-                </li>
-                <li class="select-item">
-                  <button data-select-item>Compose</button>
-                </li>
-                <li class="select-item">
-                  <button data-select-item>3D-Modeling</button>
-                </li>
-                
-                <!-- <li class="select-item">
-                  <button data-select-item>Scientific_Paper</button>
-                </li> -->
-              </ul>
-            </div>
-
-            <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="games"
-              >
-                <a href="https://rifff.itch.io/i-know" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/I_Know.png"
-                      alt="Speedionz"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">I Know</h3>
-
-                  <p class="project-category">Games</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="material"
-              >
-                <a
-                  href="https://www.artstation.com/artwork/kNGmLz?album_id=9384601"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/aari.png"
-                      alt="AARI Ornate Fabric"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">AARI Ornate Fabric</h3>
-
-                  <p class="project-category">Material</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="material"
-              >
-                <a
-                  href="https://www.artstation.com/artwork/KeZExB?album_id=10369423"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/l2r.png"
-                      alt="RIGHT LEFT RIGHT - HLSL"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">RIGHT LEFT RIGHT - HLSL</h3>
-
-                  <p class="project-category">Material</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="games"
-              >
-                <a href="https://rifff.itch.io/speedionz" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/Speedionz.png"
-                      alt="Speedionz"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Speedionz</h3>
-
-                  <p class="project-category">Games</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="games"
-              >
-                <a href="https://rifff.itch.io/dvd-dx-ball" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/dvd-dx-ball.png"
-                      alt="dvd-dx-ball"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">DVD DX Ball</h3>
-
-                  <p class="project-category">Games</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="games"
-              >
-                <a href="https://rifff.itch.io/wordle-dynamic" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/wordle-dynamic.png"
-                      alt="WORDLE DYNAMIC"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">WORDLE DYNAMIC</h3>
-
-                  <p class="project-category">Games</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="games"
-              >
-                <a href="https://rifff.itch.io/flappy-bro" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/Flappy Bro.png"
-                      alt="Flappy Bro"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Flappy Bro</h3>
-
-                  <p class="project-category">Games</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="games"
-              >
-                <a href="https://rifff.itch.io/block-craft" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/Block_Craft.jpg"
-                      alt="Block Craft"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Block Craft</h3>
-
-                  <p class="project-category">Games</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="games"
-              >
-                <a
-                  href="https://rifff.itch.io/poronto-permutation"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/poronto-permutation.png"
-                      alt="poronto-permutation"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">poronto-permutation</h3>
-
-                  <p class="project-category">Games</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="games"
-              >
-                <a href="https://rifff.itch.io/larutanrepus" target="_blank">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/larutanrepus.jpg"
-                      alt="LARUTANREPUS"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">LARUTANREPUS</h3>
-
-                  <p class="project-category">Games</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="games"
-              >
-                <a
-                  href="https://drive.google.com/file/d/1NQdeh2xxPsxt6EbVyCa3JGdkYS989AOE/view?usp=sharing"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/Apocalypse Alphagram.png"
-                      alt="Apocalypse Alphagram"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Apocalypse Alphagram</h3>
-
-                  <p class="project-category">Games</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="vertical-slices"
-              >
-                <a
-                  href="https://www.artstation.com/artwork/lDrq2O?album_id=9384594"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/ptr.png"
-                      alt="Pick Rotate Throw"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Pick Rotate Throw</h3>
-
-                  <p class="project-category">Vertical-Slices</p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="vertical-slices"
-              >
-                <a
-                  href="https://www.artstation.com/artwork/BkV42k?album_id=9384594"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/trafficLight.png"
-                      alt="Traffic Light"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">
-                    Traffic Light System & AI Car with Auto Break
-                  </h3>
-
-                  <p class="project-category">Vertical-Slices</p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="vertical-slices"
-              >
-                <a
-                  href="https://www.artstation.com/artwork/zxmJkL?album_id=9384594"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/cc.png"
-                      alt="Confront Conquest"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">
-                    Confront Conquest - Mechanisms Update ( 1st iteration )
-                  </h3>
-
-                  <p class="project-category">Vertical-Slices</p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="vertical-slices"
-              >
-                <a
-                  href="https://www.artstation.com/artwork/qekrzD?album_id=9384594"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/cctv.png"
-                      alt="CCTV"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">
-                    CCTV mechanism from Zero Hour Game
-                  </h3>
-
-                  <p class="project-category">Vertical-Slices</p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="vertical-slices"
-              >
-                <a
-                  href="https://www.artstation.com/artwork/JvY2gd?album_id=9384594"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/Corridor Scene.png"
-                      alt="Corridor Scene"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">
-                    Corridor Scene from The Mortuary Assistant Game
-                  </h3>
-
-                  <p class="project-category">Vertical-Slices</p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="vertical-slices"
-              >
-                <a
-                  href="https://www.artstation.com/artwork/49aQXn?album_id=9384594"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/rbr.png"
-                      alt="Run Bro Run 2D"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Run Bro Run 2D</h3>
-
-                  <p class="project-category">Vertical-Slices</p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="vertical-slices"
-              >
-                <a
-                  href="https://www.artstation.com/artwork/lDr5WG?album_id=9384594"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/fisheye.png"
-                      alt="FishEyeCam"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">FishEyeCam // BodyCam</h3>
-
-                  <p class="project-category">Vertical-Slices</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="material"
-              >
-                <a
-                  href="https://www.artstation.com/artwork/XJGawD?album_id=10369423"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/ocean.jpg"
-                      alt="Ocean Water Niagara"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Ocean Water Niagara</h3>
-
-                  <p class="project-category">Material</p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="material"
-              >
-                <a
-                  href="https://www.artstation.com/artwork/rJxGQG?album_id=9384601"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/Foggy.jpg"
-                      alt="Foggy Horror PP Material"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Foggy Horror PP Material</h3>
-
-                  <p class="project-category">Material</p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="material"
-              >
-                <a
-                  href="https://www.artstation.com/artwork/AlzybV?album_id=9384601"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/Medieval fabric.jpg"
-                      alt="Medieval fabric"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Medieval fabric</h3>
-
-                  <p class="project-category">Material</p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="material"
-              >
-                <a
-                  href="https://www.artstation.com/artwork/m8YNo1?album_id=9384601"
-                  target="_blank"
-                >
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/ghibli.jpg"
-                      alt="Ghibli Mat ( Toon Shader )"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Ghibli Mat ( Toon Shader )</h3>
-
-                  <p class="project-category">Material</p>
-                </a>
-              </li>
-           
-            <li
-            class="project-item active"
-            data-filter-item
-            data-category="compose"
-          >
-            
-              <figure >
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-  
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1965534851&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rifff_at" title="RIFFF" target="_blank" style="color: #cccccc; text-decoration: none;">RIFFF</a> · <a href="https://soundcloud.com/rifff_at/droplet" title="Droplet" target="_blank" style="color: #cccccc; text-decoration: none;">Droplet</a></div>
-              </figure>
-          
-          </li>
-          <li
-            class="project-item active"
-            data-filter-item
-            data-category="compose"
-          >
-            
-              <figure >
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1965534251&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rifff_at" title="RIFFF" target="_blank" style="color: #cccccc; text-decoration: none;">RIFFF</a> · <a href="https://soundcloud.com/rifff_at/retrogame-intro" title="RetroGame Intro" target="_blank" style="color: #cccccc; text-decoration: none;">RetroGame Intro</a></div>
-              </figure>
-          
-          </li>
-          <li
-            class="project-item active"
-            data-filter-item
-            data-category="compose"
-          >
-            
-              <figure >
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1965530591&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rifff_at" title="RIFFF" target="_blank" style="color: #cccccc; text-decoration: none;">RIFFF</a> · <a href="https://soundcloud.com/rifff_at/strom" title="Strom" target="_blank" style="color: #cccccc; text-decoration: none;">Strom</a></div>
-              </figure>
-          
-          </li>
-          <li
-          class="project-item active"
-          data-filter-item
-          data-category="compose"
-        >
-          
-            <figure >
-              <div class="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1965538843&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rifff_at" title="RIFFF" target="_blank" style="color: #cccccc; text-decoration: none;">RIFFF</a> · <a href="https://soundcloud.com/rifff_at/new-life" title="New Life" target="_blank" style="color: #cccccc; text-decoration: none;">New Life</a></div>
-            </figure>
-        
-        </li>
-        <li
-        class="project-item active"
-        data-filter-item
-        data-category="3d-modeling"
-      >
-        <a
-          href="https://www.artstation.com/artwork/1xLZQ2?album_id=9384595"
-          target="_blank"
-        >
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img
-              src="./assets/images/isometric.png"
-              alt="Medieval fabric"
-              loading="lazy"
-            />
-          </figure>
-
-          <h3 class="project-title">Isometric</h3>
-
-          <p class="project-category">3D Modeling</p>
-        </a>
-      </li>
-      <li
-        class="project-item active"
-        data-filter-item
-        data-category="3d-modeling"
-      >
-        <a
-          href="https://www.artstation.com/artwork/AlZ0ZW?album_id=9384595"
-          target="_blank"
-        >
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img
-              src="./assets/images/dnt.png"
-              alt="Medieval fabric"
-              loading="lazy"
-            />
-          </figure>
-
-          <h3 class="project-title">ChocoLava</h3>
-
-          <p class="project-category">3D Modeling</p>
-        </a>
-      </li>
-      <li
-        class="project-item active"
-        data-filter-item
-        data-category="3d-modeling"
-      >
-        <a
-          href="https://www.artstation.com/artwork/vDdbRA?album_id=9384595"
-          target="_blank"
-        >
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img
-              src="./assets/images/igs.png"
-              alt="Medieval fabric"
-              loading="lazy"
-            />
-          </figure>
-
-          <h3 class="project-title">Imaginary Glass suspension</h3>
-
-          <p class="project-category">3D Modeling</p>
-        </a>
-      </li>
-      <li
-      class="project-item active"
-      data-filter-item
-      data-category="3d-modeling"
-    >
-      <a
-        href="https://www.artstation.com/artwork/XgxAPn?album_id=9384595"
-        target="_blank"
-      >
-        <figure class="project-img">
-          <div class="project-item-icon-box">
-            <ion-icon name="eye-outline"></ion-icon>
-          </div>
-
-          <img
-            src="./assets/images/bluebirds.png"
-            alt="Medieval fabric"
-            loading="lazy"
-          />
-        </figure>
-
-        <h3 class="project-title">Bluebirds</h3>
-
-        <p class="project-category">3D Modeling</p>
-      </a>
-    </li>
-    <li
-      class="project-item active"
-      data-filter-item
-      data-category="3d-modeling"
-    >
-      <a
-        href="https://www.artstation.com/artwork/PXn28B?album_id=9384595"
-        target="_blank"
-      >
-        <figure class="project-img">
-          <div class="project-item-icon-box">
-            <ion-icon name="eye-outline"></ion-icon>
-          </div>
-
-          <img
-            src="./assets/images/hvf.png"
-            alt="Medieval fabric"
-            loading="lazy"
-          />
-        </figure>
-
-        <h3 class="project-title">Heavenly Violet Flower
-        </h3>
-
-        <p class="project-category">3D Modeling</p>
-      </a>
-    </li>
-    <li
-      class="project-item active"
-      data-filter-item
-      data-category="3d-modeling"
-    >
-      <a
-        href="https://www.artstation.com/artwork/9EOORN?album_id=9384595"
-        target="_blank"
-      >
-        <figure class="project-img">
-          <div class="project-item-icon-box">
-            <ion-icon name="eye-outline"></ion-icon>
-          </div>
-
-          <img
-            src="./assets/images/battery.png"
-            alt="Medieval fabric"
-            loading="lazy"
-          />
-        </figure>
-
-        <h3 class="project-title">Imaginary Battery
-        </h3>
-
-        <p class="project-category">3D Modeling</p>
-      </a>
-    </li>
-    
-    <!-- <li
-      class="project-item active"
-      data-filter-item
-      data-category="scientific_paper"
-    >
-      <a
-        href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=hHmIrHoAAAAJ&citation_for_view=hHmIrHoAAAAJ:u5HHmVD_uO8C"
-        target="_blank"
-      >
-        <figure class="project-img">
-          <div class="project-item-icon-box">
-            <ion-icon name="eye-outline"></ion-icon>
-          </div>
-
-          <img
-            src="./assets/images/cited.png"
-            alt="Medieval fabric"
-            loading="lazy"
-          />
-        </figure>
-
-        <h3 class="project-title">Secured insurance framework using blockchain and smart contract
-        </h3>
-
-        <p class="project-category">Scientific_Paper</p>
-      </a>
-    </li> -->
-            </ul>
-          </section>
-        </article>
-
-        <!--
-        - #BLOG
-      -->
-
-        <article class="blog" data-page="gallery">
-          <header>
-            <h2 class="h2 article-title">Gallery</h2>
-          </header>
-          <!-- Photo Gallery Widget Start -->
-          <!-- <section class="gallery">
-            <div class="gallery-track">
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1607419726991-5fc7e74cda67?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1601042879364-f3947d3f9c16?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?q=80&w=2272&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1514439827219-9137a0b99245?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1525790935716-36a6c45ad067?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1561344640-2453889cde5b?q=80&w=2467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1561602009-0ecd1cada8bd?q=80&w=2456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1560583306-bd304a162229?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1535478044878-3ed83d5456ef?q=80&w=2382&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1610322231968-31322d42851f?q=80&w=2536&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1561344640-2453889cde5b?q=80&w=2467&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1536890992765-f42a1ee1e2a8?q=80&w=2121&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1560583306-bd304a162229?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1573455494060-c5595004fb6c?q=80&w=2280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1627740660376-bc7506720b8a?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1563964040780-8605906e3eb6?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1592507645647-f2f1d8103c86?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1541591681685-0246308f076b?q=80&w=2489&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1539027994943-7d6960acfaad?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1573501815578-6252ee088c47?q=80&w=2283&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1558273246-57d22047406d?q=80&w=2535&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1534685042784-4c7c97ae40d7?q=80&w=2427&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-image-wrapper">
-                  <img
-                    src="https://images.unsplash.com/photo-1627740660376-bc7506720b8a?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  />
-                </div>
-              </div>
-            </div>
-          </section> -->
-          <!-- Photo Gallery Widget End  -->
-          <section class="blog-posts">
-            <ul class="blog-posts-list">
-              <li class="blog-post-item">
-                <a
-                  href="https://www.canva.com/design/DAGqueHA4P0/k51HNM8SUtKsjG4ZtdMsTw/view?utm_content=DAGqueHA4P0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd3b2bb1b18"
-                  target="_blank"
-                >
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/cmmnt.png"
-                      alt="Design conferences in 2022"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <!-- <p class="blog-category">Volunteering</p> -->
-
-                      <!-- <span class="dot"></span> -->
-
-                      <!-- <time datetime="2022-02-23">Fab 23, 2022</time> -->
-                    </div>
-
-                    <h3 class="h3 blog-item-title">Community</h3>
-
-                    <!-- <p class="blog-text">
-                      Veritatis et quasi architecto beatae vitae dicta sunt,
-                      explicabo.
-                    </p> -->
-                  </div>
-                </a>
-              </li>
-              <li class="blog-post-item">
-                <a
-                  href="https://www.canva.com/design/DAGquSfFpeA/-SkTRQXCfn5UuUBI9TuCKw/view?utm_content=DAGquSfFpeA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7484eb9817"
-                  target="_blank"
-                >
-                  <figure class="blog-banner-box">
-                    <img
-                      src="./assets/images/amtrkr.png"
-                      alt="Aumitrakkhor"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <div class="blog-content">
-                    <div class="blog-meta">
-                      <!-- <p class="blog-category">Aumitrakkhor</p> -->
-
-                      <!-- <span class="dot"></span> -->
-
-                      <!-- <time datetime="2022-02-23">Fab 23, 2022</time> -->
-                    </div>
-
-                    <h3 class="h3 blog-item-title">Aumitrakkhor</h3>
-
-                    <!-- <p class="blog-text">
-                      Veritatis et quasi architecto beatae vitae dicta sunt,
-                      explicabo.
-                    </p> -->
-                  </div>
-                </a>
-              </li>
-            </li>
-            <li class="blog-post-item">
-              <a
-                href="https://www.canva.com/design/DAGquQRkayM/avwYZliY4zpayCL7mu47mQ/view?utm_content=DAGquQRkayM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h088c43b4a8"
-                target="_blank"
-              >
-                <figure class="blog-banner-box">
-                  <img
-                    src="./assets/images/zh.png"
-                    alt="Aumitrakkhor"
-                    loading="lazy"
-                  />
-                </figure>
-
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <!-- <p class="blog-category">Aumitrakkhor</p> -->
-
-                    <!-- <span class="dot"></span> -->
-
-                    <!-- <time datetime="2022-02-23">Fab 23, 2022</time> -->
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Token of Appreciation</h3>
-
-                  <!-- <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt,
-                    explicabo.
-                  </p> -->
-                </div>
-              </a>
-            </li>
-          </li>
-  
-        </li>
-        <li class="blog-post-item">
-          <a
-            href="https://www.canva.com/design/DAGquZqrOys/ep2We0KN4nz1Yg93Hlipbg/view?utm_content=DAGquZqrOys&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6ba6070be0"
-            target="_blank"
-          >
-            <figure class="blog-banner-box">
-              <img
-                src="./assets/images/tvl.png"
-                alt="Travel"
-                loading="lazy"
-              />
-            </figure>
-
-            <div class="blog-content">
-              <div class="blog-meta">
-                <!-- <p class="blog-category">Aumitrakkhor</p> -->
-
-                <!-- <span class="dot"></span> -->
-
-                <!-- <time datetime="2022-02-23">Fab 23, 2022</time> -->
-              </div>
-
-              <h3 class="h3 blog-item-title">Travel</h3>
-
-              <!-- <p class="blog-text">
-                Veritatis et quasi architecto beatae vitae dicta sunt,
-                explicabo.
-              </p> -->
-            </div>
-          </a>
-        </li>
-            </ul>
-          </section>
-        </article>
-
-        <!--
-        - #CONTACT
-      -->
-
-        <!-- <article class="contact" data-page="contact">
-          <header>
-            <h2 class="h2 article-title">Contact</h2>
-          </header>
-
-          <section class="mapbox" data-mapbox>
-            <figure>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.06396725783!2d90.25487754014735!3d23.780753031632905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1750262159218!5m2!1sen!2sbd"
-                width="800"
-                height="600"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </figure>
-          </section>
-
-          <section class="contact-form">
-            <h3 class="h3 form-title">Contact Form</h3>
-
-            <form action="#" class="form" data-form>
-              <div class="input-wrapper">
-                <input
-                  type="text"
-                  name="fullname"
-                  class="form-input"
-                  placeholder="Full name"
-                  required
-                  data-form-input
-                />
-
-                <input
-                  type="email"
-                  name="email"
-                  class="form-input"
-                  placeholder="Email address"
-                  required
-                  data-form-input
-                />
-              </div>
-
-              <textarea
-                name="message"
-                class="form-input"
-                placeholder="Your Message"
-                required
-                data-form-input
-              ></textarea>
-
-              <button class="form-btn" type="submit" disabled data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
-            </form>
-          </section>
-        </article> -->
-      </div>
-    </main>
-
-    <!--
-    - custom js link
-  -->
-    <script src="./assets/js/script.js"></script>
-
-    <!--
-    - ionicon link
-  -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="./assets/js/gallery.js"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RIFFF — Rifat Ahammed · UE Dev, Game Designer</title>
+<meta name="description" content="Rifat Ahammed — Unreal Engine developer and game designer. Walk through a small retro castle or read the plain site.">
+<meta name="theme-color" content="#0d0b1c">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'%3E%3Crect width='16' height='16' fill='%230d0b1c'/%3E%3Crect x='2' y='7' width='12' height='7' fill='%23c9cec7'/%3E%3Crect x='2' y='4' width='2' height='3' fill='%23c9cec7'/%3E%3Crect x='7' y='4' width='2' height='3' fill='%23c9cec7'/%3E%3Crect x='12' y='4' width='2' height='3' fill='%23c9cec7'/%3E%3Crect x='6' y='10' width='4' height='4' fill='%233d4f47'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--win:#c9cec7;--win2:#e3e6e0;--hi:#ffffff;--sh:#6f766c;--sh2:#2e332c;--title:#3d4f47;--ink:#1d221c;--paper:#efeee5;--accent:#4fbf8b;--sky:#0d0b1c;--link:#1e3f8f}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--sky);color:var(--ink);font-family:"Pixelify Sans","MS Sans Serif",Tahoma,Verdana,sans-serif;font-size:16px;line-height:1.35}
+body{-webkit-text-size-adjust:100%}
+[hidden]{display:none!important}
+a{color:var(--link)}
+h1,h2,h3{line-height:1.15;margin:0}
+button{font:inherit;color:inherit}
+img{max-width:100%}
+
+/* ---- old-windows chrome ---- */
+.win,.btn,.post,.tag,.panel,.notice,#bar,.menu{border:2px solid;border-color:var(--hi) var(--sh2) var(--sh2) var(--hi);box-shadow:inset -1px -1px 0 var(--sh),inset 1px 1px 0 var(--win2)}
+.btn{display:inline-block;background:var(--win);padding:4px 12px;cursor:pointer;text-decoration:none;font-weight:700;line-height:1.2;user-select:none;-webkit-user-select:none;white-space:nowrap;color:var(--ink)}
+.btn:active,.btn.on{border-color:var(--sh2) var(--hi) var(--hi) var(--sh2);box-shadow:inset 1px 1px 0 var(--sh)}
+.btn:focus-visible{outline:1px dotted var(--ink);outline-offset:-5px}
+.win{background:var(--win);padding:3px;color:var(--ink);box-shadow:inset -1px -1px 0 var(--sh),inset 1px 1px 0 var(--win2),4px 4px 0 rgba(0,0,0,.45)}
+.tb{background:var(--title);color:#fff;padding:3px 4px 3px 8px;display:flex;align-items:center;gap:8px;font-weight:700;font-size:15px;user-select:none;-webkit-user-select:none}
+.tb .t{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tb .x{width:20px;height:18px;padding:0;font-size:13px;line-height:1;display:grid;place-items:center}
+.tools{display:flex;gap:6px;padding:6px 6px 8px;border-bottom:1px solid var(--sh);flex-wrap:wrap}
+.body{margin:6px;background:var(--paper);padding:12px;border:2px solid;border-color:var(--sh) var(--hi) var(--hi) var(--sh);box-shadow:inset 1px 1px 0 var(--sh2);overflow:auto;overscroll-behavior:contain}
+.status{font-size:12px;padding:2px 6px;border-top:1px solid var(--hi);color:#2e332c}
+.post{background:#fff;padding:10px 12px;margin:0 0 10px}
+.post:last-child{margin-bottom:0}
+.post h3{font-size:17px}
+.post .meta{font-size:12px;color:#4a504a;padding:2px 0 6px;border-bottom:1px solid #9aa097;margin-bottom:8px}
+.post p{margin:0 0 8px}.post p:last-child{margin-bottom:0}
+.post h4{margin:10px 0 4px;font-size:15px}
+ul.list{margin:0;padding-left:18px}ul.list li{margin:3px 0}
+.note{color:#4a504a;font-size:13px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;padding:3px 10px;background:var(--win);font-weight:700;font-size:14px}
+.prof{display:flex;gap:14px;align-items:center;margin-bottom:12px}
+.prof img{width:96px;height:96px;object-fit:cover;image-rendering:pixelated;border:2px solid;border-color:var(--sh) var(--hi) var(--hi) var(--sh);background:#3d4f47;flex:none}
+.prof h1{font-size:26px}.prof h2{font-size:22px}
+.prof .role{font-weight:700;color:#3d4f47}
+.embed{margin:8px 0 0;border:2px solid;border-color:var(--sh) var(--hi) var(--hi) var(--sh)}
+.embed iframe{display:block;width:100%;height:166px;border:0}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.rowbtns{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.progress{height:18px;border:2px solid;border-color:var(--sh) var(--hi) var(--hi) var(--sh);background:#fff;overflow:hidden;margin:10px 0 4px}
+.progress i{display:block;height:100%;width:100%;background:repeating-linear-gradient(90deg,var(--title) 0 12px,transparent 12px 16px);animation:march .6s linear infinite}
+@keyframes march{from{background-position:0 0}to{background-position:16px 0}}
+
+/* ---- game ---- */
+#game{position:fixed;inset:0;overflow:hidden;background:var(--sky)}
+#c{position:absolute;inset:0;width:100%;height:100%;display:block;image-rendering:pixelated;image-rendering:crisp-edges;touch-action:none}
+#hud{position:absolute;inset:0;pointer-events:none;z-index:2}
+#hud>*{pointer-events:auto}
+.panel{position:absolute;top:10px;left:10px;background:var(--win);padding:5px 10px 6px;min-width:150px}
+.panel .sub{font-size:12px;color:#3a403a}
+#locBtn{background:none;border:0;padding:0;font-weight:700;font-size:15px;cursor:pointer}
+.menu{position:absolute;top:100%;left:-2px;margin-top:4px;background:var(--win);min-width:180px;padding:3px}
+.menu button{display:block;width:100%;text-align:left;background:none;border:0;padding:5px 10px;cursor:pointer;font-size:15px}
+.menu button:hover,.menu button:focus-visible{background:var(--title);color:#fff;outline:0}
+#toPlain{position:absolute;top:10px;right:10px}
+#dayBtn{position:absolute;top:10px;right:112px;min-width:84px}
+#juke{top:auto;left:auto;right:10px;bottom:10px;width:224px;min-width:0}
+#juke .jt{font-size:12px;color:#3a403a}
+#juke .jn{font-weight:700;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#juke .jb{display:flex;gap:4px;margin:5px 0 3px}
+#juke .jb .btn{padding:2px 9px;font-size:14px;line-height:1.3}
+#juke .jb .btn.wide{flex:1;text-align:center}
+#scFrame{position:absolute;left:0;top:0;width:1px;height:1px;opacity:0;pointer-events:none;border:0}
+.inp{display:block;width:100%;font:inherit;font-size:15px;padding:5px 7px;background:#fff;color:var(--ink);border:2px solid;border-color:var(--sh) var(--hi) var(--hi) var(--sh);box-shadow:inset 1px 1px 0 var(--sh2);border-radius:0}
+.inp:focus{outline:1px dotted var(--ink);outline-offset:1px}
+textarea.inp{resize:vertical;min-height:84px}
+.form label{display:block;font-weight:700;font-size:14px;margin:6px 0 8px}
+.form label .inp{margin-top:3px;font-weight:400}
+.gb-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:14px 0 8px}
+.gb-head .btn{padding:2px 8px;font-size:13px}
+.notice{position:absolute;left:50%;bottom:112px;transform:translateX(-50%);width:min(360px,86vw);background:var(--win);padding:6px 10px}
+.notice .n1{font-size:12px;color:#3a403a}.notice .n2{font-size:15px;min-height:1.35em}
+#bar{position:absolute;left:0;right:0;bottom:10px;margin:0 auto;width:max-content;max-width:96vw;background:var(--win);padding:0 3px 3px}
+#bar .strip{height:7px;background:var(--accent);margin:3px 0 4px;border-top:1px solid #2f7a55}
+#bar .btns{display:flex;gap:2px;flex-wrap:wrap;justify-content:center}
+#bar button{background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:2px;padding:3px 8px 4px;font-size:12px;cursor:pointer;min-width:56px}
+#bar button svg{width:28px;height:28px;shape-rendering:crispEdges;fill:#2c3a33}
+#bar button:hover,#bar button:focus-visible{background:var(--win2);outline:0}
+#bar button.on{background:var(--title);color:#fff}#bar button.on svg{fill:#fff}
+#fade{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none;transition:opacity .35s;z-index:5}
+#fade.on{opacity:1}
+#winLayer{position:absolute;inset:0;pointer-events:none;z-index:6}
+#winLayer .win{pointer-events:auto;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(640px,94vw);max-height:min(82vh,760px);display:flex;flex-direction:column}
+#winLayer .body{flex:1;min-height:0}
+#winLayer .tb{cursor:move}
+#loadWin{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(400px,90vw);z-index:7}
+#touch{position:absolute;inset:0;pointer-events:none}
+#stick{position:absolute;left:18px;bottom:92px;width:124px;height:124px;border-radius:50%;background:rgba(201,206,199,.22);border:2px solid rgba(255,255,255,.55);pointer-events:auto;touch-action:none}
+#knob{position:absolute;left:50%;top:50%;width:50px;height:50px;margin:-25px 0 0 -25px;border-radius:50%;background:var(--win);border:2px solid;border-color:var(--hi) var(--sh2) var(--sh2) var(--hi)}
+#eBtn{position:absolute;right:20px;bottom:110px;width:66px;height:66px;font-size:28px;pointer-events:auto;opacity:.55}
+#eBtn.ready{opacity:1}
+@media (hover:hover) and (pointer:fine){#touch{display:none}}
+@media (max-width:900px){#juke{top:52px;bottom:auto}}
+@media (hover:none) and (pointer:coarse){.notice{top:62px;bottom:auto}#stick{bottom:104px}#eBtn{bottom:118px}#juke{top:120px;width:200px}}
+@media (max-width:420px){#dayBtn{right:108px;min-width:0;padding:4px 8px}}
+@media (max-width:520px){#bar{max-width:98vw}#bar button{min-width:42px;font-size:10px;padding:3px 3px 4px}#bar button svg{width:22px;height:22px}.panel{min-width:0}}
+
+/* ---- plain site ---- */
+#plain{min-height:100vh;padding:16px 12px 76px;background-color:#1b2420;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:32px 32px}
+.desk{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+.desk .win{scroll-margin-top:16px}
+#ptask{position:fixed;left:0;right:0;bottom:0;background:var(--win);border-top:2px solid var(--hi);box-shadow:0 -1px 0 var(--sh);padding:5px 6px;display:flex;gap:4px;align-items:center;overflow-x:auto;z-index:3}
+#ptask .btn{font-size:14px;padding:4px 10px}
+#ptask .sp{flex:1}
+#ptask .clock{font-size:13px;padding:3px 8px;border:2px solid;border-color:var(--sh) var(--hi) var(--hi) var(--sh);white-space:nowrap}
+@media (prefers-reduced-motion:reduce){#fade{transition:none}.progress i{animation:none}}
+</style>
+</head>
+<body>
+
+<div id="game" hidden>
+  <canvas id="c"></canvas>
+  <div id="hud">
+    <div class="panel" id="loc">
+      <button id="locBtn" aria-haspopup="true">Castle lobby ▾</button>
+      <div class="sub">1 here · RIFFF OS</div>
+      <div id="locMenu" class="menu" hidden></div>
+    </div>
+    <button class="btn" id="toPlain">Plain site</button>
+    <button class="btn" id="dayBtn" aria-label="Toggle day and night" title="Toggle day / night (N)">☾ Night</button>
+    <div class="panel" id="juke" hidden>
+      <div class="jt">♪ Jukebox</div>
+      <div class="jn" id="jukeTitle">—</div>
+      <div class="jb"><button type="button" class="btn" id="jukePrev" aria-label="Previous track">«</button><button type="button" class="btn wide" id="jukePlay" aria-label="Play or pause">▶</button><button type="button" class="btn" id="jukeNext" aria-label="Next track">»</button><a class="btn" id="jukeLink" href="https://soundcloud.com/rifff_at" target="_blank" rel="noopener" aria-label="Open on SoundCloud">SC</a></div>
+      <div class="sub" id="jukeStatus">Loading…</div>
+    </div>
+    <div class="notice" id="notice"><div class="n1">Castle lobby · Tip</div><div class="n2">Walk into a doorway to enter a room.</div></div>
+    <nav id="bar" aria-label="Rooms"><div class="strip"></div><div class="btns"></div></nav>
+    <div id="touch"><div id="stick"><div id="knob"></div></div><button class="btn" id="eBtn" aria-label="Read board">E</button></div>
+  </div>
+  <div id="winLayer"></div>
+  <div id="loadWin" class="win" hidden>
+    <div class="tb"><span class="t">Loading castle…</span></div>
+    <div class="body"><p id="loadMsg">Fetching the 3D engine and building the courtyard.</p><div class="progress"><i></i></div>
+      <div class="rowbtns" id="loadBtns" hidden><button class="btn" id="loadRetry">Try again</button><button class="btn" id="loadPlain">Plain site</button></div></div>
+    <div class="status" id="loadStatus">Please wait</div>
+  </div>
+  <div id="fade"></div>
+</div>
+
+<div id="plain" hidden>
+  <main id="desk" class="desk"></main>
+  <nav id="ptask" aria-label="Sections"></nav>
+</div>
+
+<noscript><div class="win" style="max-width:520px;margin:40px auto"><div class="tb"><span class="t">RIFFF</span></div><div class="body">This page needs JavaScript. Find Rifat at <a href="https://github.com/rifatahammed">github.com/rifatahammed</a>.</div></div></noscript>
+
+<script>
+(function(){
+'use strict';
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const TOUCH=matchMedia('(hover: none) and (pointer: coarse)').matches;
+const isMobile=()=>TOUCH||innerWidth<720;
+
+/* =========================================================
+   CONTENT — edit this block to change what the site says
+   ========================================================= */
+const D={
+ name:'Rifat Ahammed',handle:'RIFFF',role:'UE Dev, Game Designer',location:'Bangladesh, Asia',
+ avatar:'https://rifatahammed.github.io/assets/images/my-avatar.png',
+ emails:['reardj007@gmail.com','rifatahammed@yahoo.com'],
+ // Guestbook: visitor notes are posted as GitHub issues on this repository and read back from it.
+ // Set enabled:false to remove the guestbook board, window and taskbar link completely.
+ guestbook:{enabled:true,repo:'rifatahammed/rifatahammed.github.io',label:'guestbook'},
+ social:[
+  {title:'Facebook',url:'https://www.facebook.com/rifatahammed'},
+  {title:'LinkedIn',url:'https://www.linkedin.com/in/rifat-ahammed'},
+  {title:'Blog',url:'https://rifatahammed.blogspot.com/'},
+  {title:'YouTube',url:'https://www.youtube.com/@rifat.ahammed'}
+ ],
+ about:[
+  'Hiiiiiiiiiiii, this is Rifff, a game design enthusiast, currently working as the Lead Unreal Developer for Attrito – M7-PRODUCTION LTD. Love to play games, music.',
+  "I love to listen to people. That's why I run around, going to different places, meeting different people, and engaging in different activities. To me, everything people do and say seems like part of a big game. We are all NPCs in it. So I run around again..."
+ ],
+ doing:[
+  {title:'itch.io',note:'Leisure game projects to play with FnF',url:'https://rifff.itch.io/'},
+  {title:'ArtStation',note:'Game arts, designs, diagrams',url:'https://riff.artstation.com/'},
+  {title:'SoundCloud',note:'Composed tracks with FL Studio',url:'https://soundcloud.com/rifff_at'},
+  {title:'Stream',note:'I got OBS n GeForce installed :P',url:'https://www.youtube.com/@rifffz'},
+  {title:'Shadertoy',note:'playin pxls',url:'https://www.shadertoy.com/user/RIFFF'},
+  {title:'Tableau',note:'Exploring dashboards is fun',url:'https://public.tableau.com/app/profile/rifat.ahammed4331/vizzes'},
+  {title:'GitHub',note:'The true savior',url:'https://github.com/rifatahammed'}
+ ],
+ skills:['Unreal Engine','Unity','C++','Python','Data Analysis','Machine Learning','FL Studio','DaVinci Resolve','MERN Stack','Blender','Substance Designer','JavaScript','TypeScript'],
+ experience:[
+  {role:'Lead Unreal Developer, Quest Designer',org:'ATTRITO – M7-PRODUCTION LTD',years:'2022 — Present',
+   bullets:['Design and develop quests and missions','Develop different game mechanisms and vertical slices','Develop pipelines for cross-team collaboration','Work on Unreal Engine R&D and optimizations'],
+   sub:{title:'Zero Hour',bullets:['Ensure a standard player experience through continuous testing','Balance and optimize in-game maps','Find and resolve bugs as part of the QA team']}}
+ ],
+ volunteering:[
+  {role:'Academic Team Member',org:'Bangladesh Mathematical Olympiad',years:'2017 — 2019'},
+  {role:'Academic Team Member',org:'Society for the Popularization of Science, Bangladesh (বাংলাদেশ বিজ্ঞান জনপ্রিয়করণ সমিতি)',years:'2017 — 2020'},
+  {role:'Trainer',org:'Children Science Congress, Bangladesh',years:'2017 — 2020'},
+  {role:'General Member',org:'NSU ACM Student Chapter',years:'2017 — 2020'},
+  {role:'Volunteer',org:'Bangladesh Red Crescent Society',years:'2009 — 2012'}
+ ],
+ education:[
+  {role:'Computer Science and Engineering',org:'North South University',years:'2017 — 2021'},
+  {role:'Noakhali Govt. College',org:'',years:'2013 — 2015'},
+  {role:'Noakhali Zilla School',org:'',years:'2007 — 2013'}
+ ],
+ games:[
+  {title:'I Know',url:'https://rifff.itch.io/i-know'},
+  {title:'Speedionz',url:'https://rifff.itch.io/speedionz'},
+  {title:'DVD DX Ball',url:'https://rifff.itch.io/dvd-dx-ball'},
+  {title:'Wordle Dynamic',url:'https://rifff.itch.io/wordle-dynamic'},
+  {title:'Flappy Bro',url:'https://rifff.itch.io/flappy-bro'},
+  {title:'Block Craft',url:'https://rifff.itch.io/block-craft'},
+  {title:'Poronto Permutation',url:'https://rifff.itch.io/poronto-permutation'},
+  {title:'Larutanrepus',url:'https://rifff.itch.io/larutanrepus'},
+  {title:'Apocalypse Alphagram',url:'https://drive.google.com/file/d/1NQdeh2xxPsxt6EbVyCa3JGdkYS989AOE/view?usp=sharing'}
+ ],
+ slices:[
+  {title:'Pick Rotate Throw',url:'https://www.artstation.com/artwork/lDrq2O?album_id=9384594'},
+  {title:'Traffic Light System & AI Car with Auto Brake',url:'https://www.artstation.com/artwork/BkV42k?album_id=9384594'},
+  {title:'Confront Conquest – Mechanisms Update (1st iteration)',url:'https://www.artstation.com/artwork/zxmJkL?album_id=9384594'},
+  {title:'CCTV mechanism from Zero Hour',url:'https://www.artstation.com/artwork/qekrzD?album_id=9384594'},
+  {title:'Corridor Scene from The Mortuary Assistant',url:'https://www.artstation.com/artwork/JvY2gd?album_id=9384594'},
+  {title:'Run Bro Run 2D',url:'https://www.artstation.com/artwork/49aQXn?album_id=9384594'},
+  {title:'FishEyeCam // BodyCam',url:'https://www.artstation.com/artwork/lDr5WG?album_id=9384594'}
+ ],
+ materials:[
+  {title:'AARI Ornate Fabric',url:'https://www.artstation.com/artwork/kNGmLz?album_id=9384601'},
+  {title:'Right Left Right – HLSL',url:'https://www.artstation.com/artwork/KeZExB?album_id=10369423'},
+  {title:'Ocean Water Niagara',url:'https://www.artstation.com/artwork/XJGawD?album_id=10369423'},
+  {title:'Foggy Horror PP Material',url:'https://www.artstation.com/artwork/rJxGQG?album_id=9384601'},
+  {title:'Medieval Fabric',url:'https://www.artstation.com/artwork/AlzybV?album_id=9384601'},
+  {title:'Ghibli Mat (Toon Shader)',url:'https://www.artstation.com/artwork/m8YNo1?album_id=9384601'}
+ ],
+ modeling:[
+  {title:'Isometric',url:'https://www.artstation.com/artwork/1xLZQ2?album_id=9384595'},
+  {title:'ChocoLava',url:'https://www.artstation.com/artwork/AlZ0ZW?album_id=9384595'},
+  {title:'Imaginary Glass Suspension',url:'https://www.artstation.com/artwork/vDdbRA?album_id=9384595'},
+  {title:'Bluebirds',url:'https://www.artstation.com/artwork/XgxAPn?album_id=9384595'},
+  {title:'Heavenly Violet Flower',url:'https://www.artstation.com/artwork/PXn28B?album_id=9384595'},
+  {title:'Imaginary Battery',url:'https://www.artstation.com/artwork/9EOORN?album_id=9384595'}
+ ],
+ gallery:[
+  {title:'Design conferences in 2022',note:'Community',url:'https://www.canva.com/design/DAGqueHA4P0/k51HNM8SUtKsjG4ZtdMsTw/view?utm_content=DAGqueHA4P0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd3b2bb1b18'},
+  {title:'Aumitrakkhor',url:'https://www.canva.com/design/DAGquSfFpeA/-SkTRQXCfn5UuUBI9TuCKw/view?utm_content=DAGquSfFpeA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7484eb9817'},
+  {title:'Token of Appreciation',url:'https://www.canva.com/design/DAGquQRkayM/avwYZliY4zpayCL7mu47mQ/view?utm_content=DAGquQRkayM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h088c43b4a8'},
+  {title:'Travel',url:'https://www.canva.com/design/DAGquZqrOys/ep2We0KN4nz1Yg93Hlipbg/view?utm_content=DAGquZqrOys&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6ba6070be0'}
+ ],
+ compose:[
+  {title:'Droplet',id:'1965534851',url:'https://soundcloud.com/rifff_at/droplet'},
+  {title:'RetroGame Intro',id:'1965534251',url:'https://soundcloud.com/rifff_at/retrogame-intro'},
+  {title:'Strom',id:'1965530591',url:'https://soundcloud.com/rifff_at/strom'},
+  {title:'New Life',id:'1965538843',url:'https://soundcloud.com/rifff_at/new-life'}
+ ]
+};
+
+/* ---------- section renderers (shared by the 3D boards and the plain site) ---------- */
+const A=i=>`<a href="${esc(i.url)}" target="_blank" rel="noopener">${esc(i.title)}</a>`;
+const list=items=>`<ul class="list">${items.map(i=>`<li>${A(i)}${i.note?` <span class="note">— ${esc(i.note)}</span>`:''}</li>`).join('')}</ul>`;
+const cv=items=>`<ul class="list">${items.map(v=>`<li><b>${esc(v.role)}</b>${v.org?' — '+esc(v.org):''} <span class="note">${esc(v.years)}</span></li>`).join('')}</ul>`;
+const post=(t,m,b)=>`<article class="post"><h3>${esc(t)}</h3><div class="meta">${esc(m)}</div>${b}</article>`;
+const BY='By Rifat • ';
+const profCard=big=>`<div class="prof"><img src="${esc(D.avatar)}" alt="" width="96" height="96" onerror="this.style.display='none'"><div>${big?'<h1>':'<h2>'}${esc(D.name)}${big?'</h1>':'</h2>'}<div class="role">${esc(D.role)}</div><div class="note">${esc(D.location)}</div></div></div>`;
+const embed=c=>`<div class="embed"><iframe title="${esc(c.title)} on SoundCloud" loading="lazy" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${c.id}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe></div><p class="note" style="margin-top:6px">Open on SoundCloud: ${A(c)}</p>`;
+
+const S={};
+S.welcome={title:'Bulletin Board v1.0',label:'Welcome board',status:'3 posts loaded',html:()=>
+  post("Welcome to RIFFF's castle",BY+'09/18/2026','<p>This is the home page of Rifat Ahammed, Unreal Engine developer and game designer, built as a small retro world. The lobby you are standing in is the hub. Each doorway leads to a room, and every board inside a room opens a window like this one.</p>')
+ +post('Rooms',BY+'09/16/2026','<ul class="list"><li><b>Profile room</b> (west) — about me, what I\'m doing, contact'+(D.guestbook.enabled?', and a guestbook you can sign':'')+'</li><li><b>Resume room</b> (east) — skills, experience, volunteering, education</li><li><b>Portfolio hall</b> (north) — games, vertical slices, materials, 3D modeling, gallery</li><li><b>Music room</b> (south) — tracks composed in FL Studio; they start playing when you walk in</li></ul>')
+ +post('How to walk',BY+'09/14/2026',TOUCH
+   ?'<p>Use the stick to walk and turn. Drag the right side of the screen to look around. Stand near a board and tap E to read it.</p><p>The bar at the bottom jumps straight to a room. The moon button switches day and night. Plain site (top right) shows everything as a normal page.</p>'
+   :'<p>W A S D or the arrow keys walk and turn, Shift runs. Drag the mouse to look around, scroll to zoom. Stand near a board and press E to read it.</p><p>N switches day and night, M pauses the music. The bar at the bottom jumps straight to a room. Plain site (top right) shows everything as a normal page.</p>')};
+S.about={title:'About me',label:'About me',status:'2 posts loaded',
+  body:()=>post('Hiiiiiiiiiiii',BY+'about',`<p>${esc(D.about[0])}</p>`)+post('We are all NPCs',BY+'about',`<p>${esc(D.about[1])}</p>`),
+  html:()=>profCard(false)+S.about.body()};
+S.doing={title:"What I'm doing",label:"What I'm doing",status:D.doing.length+' places loaded',html:()=>post('Where my stuff lives',BY+'links',list(D.doing))};
+S.contact={title:'Contact',label:'Contact',status:'2 posts loaded',html:()=>
+  post('Say hello',BY+'contact',`<ul class="list">${D.emails.map(e=>`<li><a href="mailto:${esc(e)}">${esc(e)}</a></li>`).join('')}<li>${esc(D.location)}</li></ul>`)
+ +post('Elsewhere',BY+'links',list(D.social))};
+S.skills={title:'Skills',label:'Skills',status:D.skills.length+' skills loaded',html:()=>post('Tools I use',BY+'skills',`<div class="tags">${D.skills.map(s=>`<span class="tag">${esc(s)}</span>`).join('')}</div>`)};
+S.experience={title:'Experience',label:'Experience',status:D.experience.length+' post loaded',html:()=>D.experience.map(e=>post(e.role,`${e.org} • ${e.years}`,
+  `<ul class="list">${e.bullets.map(b=>`<li>${esc(b)}</li>`).join('')}</ul>${e.sub?`<h4>${esc(e.sub.title)}</h4><ul class="list">${e.sub.bullets.map(b=>`<li>${esc(b)}</li>`).join('')}</ul>`:''}`)).join('')};
+S.volunteering={title:'Volunteering',label:'Volunteering',status:D.volunteering.length+' entries loaded',html:()=>post('Volunteering',BY+'resume',cv(D.volunteering))};
+S.education={title:'Education',label:'Education',status:D.education.length+' entries loaded',html:()=>post('Education',BY+'resume',cv(D.education))};
+const port=(key,title,items,src)=>{S[key]={title,label:title,status:items.length+' projects loaded',html:()=>post(title,BY+src,list(items))};};
+port('games','Games',D.games,'itch.io');
+port('slices','Vertical slices',D.slices,'ArtStation');
+port('materials','Materials',D.materials,'ArtStation');
+port('modeling','3D modeling',D.modeling,'ArtStation');
+port('gallery','Gallery',D.gallery,'Canva');
+D.compose.forEach((c,i)=>{S['track'+i]={title:c.title,label:c.title,status:'Now playing',html:()=>post(c.title,BY+'FL Studio',`<p>Now playing in the jukebox. Use the jukebox panel to pause or skip, or ${TOUCH?'tap':'press'} E on another board to switch songs.</p><p class="note">Open on SoundCloud: ${A(c)}</p>`)};});
+S.compose={title:'Compose',label:'Compose',status:D.compose.length+' tracks loaded',html:()=>D.compose.map(c=>post(c.title,BY+'FL Studio',embed(c))).join('')};
+
+/* ---------- guestbook (notes are GitHub issues on the site repository) ---------- */
+const GB={cache:null,draft:{name:'',msg:''}};
+try{const s=localStorage.getItem('rifff-gb');if(s)GB.draft=JSON.parse(s)||GB.draft;}catch(e){}
+const gbListUrl=()=>`https://github.com/${D.guestbook.repo}/issues?q=${encodeURIComponent('is:issue Guestbook in:title')}`;
+S.guestbook={title:'Guestbook',label:'Guestbook',status:'Sign the book',wire:root=>wireGuestbook(root),html:()=>
+  post('Leave a note',BY+'guestbook',`<div class="form"><label>Name<input class="inp" data-gb="name" maxlength="60" autocomplete="name" placeholder="Your name"></label><label>Message<textarea class="inp" data-gb="msg" rows="4" maxlength="2000" placeholder="Say hi, leave feedback, share a link…"></textarea></label><div class="rowbtns"><button type="button" class="btn gb-post">Post on GitHub</button><a class="btn gb-mail" href="#">Send by email</a></div><p class="note">Posting opens a pre-filled note on this site’s GitHub repository, so it lands right next to the code (you need a GitHub account; a new tab opens). Email works without one.</p></div>`)
+ +`<div class="gb-head"><b>Notes from visitors</b><button type="button" class="btn gb-refresh">Refresh</button></div><div class="gb-list"><p class="note">Loading notes…</p></div>`};
+function gbEntry(i){const name=String(i.title||'').replace(/^guestbook\s*[:\-–—]?\s*/i,'').trim()||(i.user&&i.user.login)||'Someone';
+ let body=String(i.body||'').replace(/\r/g,'').replace(/\n+—\nPosted from[^\n]*$/,'').trim();if(body.length>700)body=body.slice(0,700)+'…';
+ const when=i.created_at?new Date(i.created_at).toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'}):'';
+ return post(name,`By ${i.user&&i.user.login?i.user.login:'guest'} • ${when}`,`<p>${esc(body).replace(/\n{2,}/g,'</p><p>').replace(/\n/g,'<br>')}</p><p class="note"><a href="${esc(i.html_url||gbListUrl())}" target="_blank" rel="noopener">Reply on GitHub</a></p>`);}
+async function loadGuestbook(root,force){const box=root.querySelector('.gb-list');if(!box)return;
+ if(GB.cache&&!force){box.innerHTML=GB.cache;return;}
+ box.innerHTML='<p class="note">Loading notes…</p>';
+ try{const r=await fetch(`https://api.github.com/repos/${D.guestbook.repo}/issues?state=open&per_page=30&sort=created`,{headers:{Accept:'application/vnd.github+json'}});
+  if(!r.ok)throw new Error('HTTP '+r.status);
+  const items=(await r.json()).filter(i=>!i.pull_request&&(/^guestbook/i.test(i.title||'')||(i.labels||[]).some(l=>l&&l.name===D.guestbook.label)));
+  GB.cache=items.length?items.map(gbEntry).join(''):'<p class="note">No notes yet — be the first to sign.</p>';box.innerHTML=GB.cache;}
+ catch(e){GB.cache=null;box.innerHTML=`<p class="note">Could not load the notes right now. <a href="${esc(gbListUrl())}" target="_blank" rel="noopener">Read them on GitHub</a>.</p>`;}}
+function wireGuestbook(root){if(!root)return;const name=root.querySelector('[data-gb=name]'),msg=root.querySelector('[data-gb=msg]');if(!name||!msg)return;
+ name.value=GB.draft.name||'';msg.value=GB.draft.msg||'';
+ const save=()=>{GB.draft={name:name.value,msg:msg.value};try{localStorage.setItem('rifff-gb',JSON.stringify(GB.draft));}catch(e){}
+  document.querySelectorAll('[data-gb=name]').forEach(el=>{if(el!==name)el.value=name.value;});document.querySelectorAll('[data-gb=msg]').forEach(el=>{if(el!==msg)el.value=msg.value;});};
+ name.addEventListener('input',save);msg.addEventListener('input',save);
+ const text=()=>({n:name.value.trim()||'Anonymous',m:msg.value.trim()});
+ root.querySelector('.gb-post').addEventListener('click',()=>{const t=text();if(!t.m){msg.focus();return;}
+  const q=new URLSearchParams({title:'Guestbook: '+t.n,body:t.m+'\n\n—\nPosted from the castle guestbook',labels:D.guestbook.label});
+  window.open(`https://github.com/${D.guestbook.repo}/issues/new?${q}`,'_blank','noopener');});
+ root.querySelector('.gb-mail').addEventListener('click',e=>{const t=text();if(!t.m){e.preventDefault();msg.focus();return;}
+  e.currentTarget.href=`mailto:${D.emails[0]}?subject=${encodeURIComponent('Guestbook: '+t.n)}&body=${encodeURIComponent(t.m)}`;});
+ root.querySelector('.gb-refresh').addEventListener('click',()=>loadGuestbook(root,true));
+ loadGuestbook(root,false);}
+
+/* ---------- rooms ---------- */
+const ROOMS={
+ lobby:{name:'Castle lobby',w:36,d:36,H:7,indoor:false,tint:[188,166,158],floor:'tile',
+  doors:[{side:'N',at:0,to:'portfolio',label:'Portfolio hall'},{side:'W',at:0,to:'profile',label:'Profile room'},{side:'E',at:0,to:'resume',label:'Resume room'},{side:'S',at:0,to:'music',label:'Music room'}],
+  tips:TOUCH?['Walk into a doorway to enter a room.','The bulletin board ahead explains the castle.','Use the bar below to jump to a room.']:['Walk into a doorway to enter a room.','The bulletin board ahead explains the castle.','Hold Shift to run.']},
+ profile:{name:'Profile room',w:22,d:16,H:5,indoor:true,tint:[178,150,118],floor:'wood',
+  boards:[{key:'about',side:'N',t:-0.5},{key:'doing',side:'N',t:0.5},{key:'contact',side:'W',t:0},...(D.guestbook.enabled?[{key:'guestbook',side:'E',t:0}]:[])],
+  torches:D.guestbook.enabled?[['E',-0.7],['E',0.7],['S',-0.6],['S',0.6]]:[['E',0],['S',-0.6],['S',0.6]],
+  tips:[...(D.guestbook.enabled?['The guestbook is on the east wall — leave a note.']:[]),...(TOUCH?['Tap E next to a board to read it.']:['Walk up to a board and press E to read it.','Drag the mouse to look around, scroll to zoom.'])]},
+ resume:{name:'Resume room',w:26,d:18,H:5,indoor:true,tint:[150,158,172],floor:'wood',
+  boards:[{key:'skills',side:'W',t:0},{key:'experience',side:'N',t:-0.5},{key:'volunteering',side:'N',t:0.5},{key:'education',side:'E',t:0}],torches:[['S',-0.6],['S',0.6]]},
+ portfolio:{name:'Portfolio hall',w:30,d:20,H:6,indoor:true,tint:[142,168,160],floor:'tile',
+  boards:[{key:'games',side:'N',t:-0.6},{key:'slices',side:'N',t:0},{key:'materials',side:'N',t:0.6},{key:'modeling',side:'W',t:0},{key:'gallery',side:'E',t:0}],torches:[['S',-0.6],['S',0.6],['W',-0.7],['E',0.7]]},
+ music:{name:'Music room',w:20,d:16,H:5,indoor:true,tint:[168,140,170],floor:'wood',
+  boards:[{key:'track0',side:'N',t:-0.5},{key:'track1',side:'N',t:0.5},{key:'track2',side:'W',t:0},{key:'track3',side:'E',t:0}],torches:[['S',-0.6],['S',0.6]],
+  tips:['Music plays while you are in this room.',TOUCH?'Tap E on a track board to play that song.':'Press E on a track board to play that song.',TOUCH?'The jukebox panel pauses or skips tracks.':'M pauses the music, the jukebox panel skips tracks.']}
+};
+const TIPS=TOUCH
+ ?['Use the stick to walk. Drag the right side to look around.','Tap E next to a board to read it.','The door marked Back to lobby returns to the courtyard.']
+ :['Walk up to a board and press E to read it.','Drag the mouse to look around, scroll to zoom.','The door marked Back to lobby returns to the courtyard.'];
+
+/* ---------- plain site ---------- */
+function buildPlain(){
+ const win=(id,title,body,status)=>`<section class="win" id="p-${id}"><div class="tb"><span class="t">${esc(title)}</span></div><div class="body">${body}</div><div class="status">Ready • ${esc(status)}</div></section>`;
+ const head=profCard(true)
+  +'<p>Portfolio of a game designer and Unreal Engine developer. Read it here as a plain page, or walk through it as a small retro castle.</p>'
+  +`<div class="actions"><button class="btn play">Enter the castle (3D)</button>${D.social.map(s=>`<a class="btn" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join('')}</div>`;
+ $('#desk').innerHTML=
+   win('home','RIFFF.exe',head,'The castle is best with a keyboard')
+  +win('about','About me',S.about.body()+S.doing.html(),'3 posts loaded')
+  +win('skills','Skills',S.skills.html(),S.skills.status)
+  +win('resume','Resume',S.experience.html()+S.volunteering.html()+S.education.html(),'3 posts loaded')
+  +win('portfolio','Portfolio',S.games.html()+S.slices.html()+S.materials.html()+S.modeling.html()+S.gallery.html(),'5 posts loaded')
+  +win('compose','Music',S.compose.html(),S.compose.status)
+  +win('contact','Contact',S.contact.html(),S.contact.status)
+  +(D.guestbook.enabled?win('guestbook','Guestbook',S.guestbook.html(),S.guestbook.status):'');
+ if(D.guestbook.enabled)wireGuestbook($('#p-guestbook'));
+ $('#ptask').innerHTML='<button class="btn play">▶ Play</button>'
+  +[['about','About'],['skills','Skills'],['resume','Resume'],['portfolio','Portfolio'],['compose','Music'],['contact','Contact'],...(D.guestbook.enabled?[['guestbook','Guestbook']]:[])].map(x=>`<a class="btn" href="#p-${x[0]}">${x[1]}</a>`).join('')
+  +'<span class="sp"></span><span class="clock" id="clock"></span>';
+ const tick=()=>{const c=$('#clock');if(c)c.textContent=new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});};
+ tick();setInterval(tick,30000);
+}
+
+/* =========================================================
+   THE CASTLE — three.js world (loaded only when needed)
+   ========================================================= */
+let renderer,scene,camera,world,player,clock,ANISO=1;
+let started=false,starting=false,paused=true;
+const PR=0.45; // player radius
+const G={roomKey:null,bounds:{w:36,d:36,H:7,indoor:false},inter:[],colliders:[],doors:[],torches:[],near:null,
+ camYaw:0,camPitch:0.36,camDist:6.2,winOpen:false,cooldown:0,transition:false,tipIdx:0,tipT:0,stick:{x:0,y:0},run:false,t:0};
+const K={f:false,b:false,l:false,r:false};
+const C={}; // procedural canvases
+const _v=()=>new THREE.Vector3();
+let tmpV;
+
+function loadThree(){return new Promise((res,rej)=>{if(window.THREE)return res();const s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';s.async=true;s.onload=()=>window.THREE?res():rej(new Error('THREE missing'));s.onerror=()=>rej(new Error('script failed'));document.head.appendChild(s);});}
+function fontReady(){if(!document.fonts||!document.fonts.load)return Promise.resolve();return Promise.race([document.fonts.load('700 26px "Pixelify Sans"').catch(()=>{}),new Promise(r=>setTimeout(r,2500))]);}
+
+/* ---- canvas textures ---- */
+function cnv(w,h){const c=document.createElement('canvas');c.width=w;c.height=h;return c;}
+function mkRand(seed){let s=seed>>>0;return()=>{s=(s*1664525+1013904223)>>>0;return s/4294967296;};}
+function rgb(c,n=0){const k=v=>Math.max(0,Math.min(255,Math.round(v+n)));return `rgb(${k(c[0])},${k(c[1])},${k(c[2])})`;}
+function grain(x,w,h,base,amt,r,step){for(let y=0;y<h;y+=step)for(let i=0;i<w;i+=step){x.fillStyle=rgb(base,(r()-0.5)*amt);x.fillRect(i,y,step,step);}}
+function brickCanvas(base,seed){const w=128,h=128,c=cnv(w,h),x=c.getContext('2d'),r=mkRand(seed);
+ x.fillStyle=rgb([base[0]*0.55,base[1]*0.55,base[2]*0.55]);x.fillRect(0,0,w,h);const bh=16,bw=32;
+ for(let row=0;row<h/bh;row++){const off=(row%2)*bw/2;for(let i=-1;i<w/bw+1;i++){const bx=i*bw+off,tint=(r()-0.5)*30;x.fillStyle=rgb(base,tint);x.fillRect(bx+1,row*bh+1,bw-2,bh-2);
+  for(let k=0;k<14;k++){x.fillStyle=rgb(base,tint+(r()-0.5)*44);x.fillRect(bx+2+Math.floor(r()*(bw-4)),row*bh+2+Math.floor(r()*(bh-4)),2,2);}
+  x.fillStyle=rgb(base,tint+22);x.fillRect(bx+1,row*bh+1,bw-2,1);}}
+ return c;}
+function tileCanvas(base,seed){const w=64,h=64,c=cnv(w,h),x=c.getContext('2d'),r=mkRand(seed);
+ x.fillStyle=rgb([base[0]*0.5,base[1]*0.5,base[2]*0.5]);x.fillRect(0,0,w,h);
+ for(let ty=0;ty<2;ty++)for(let tx=0;tx<2;tx++){const tint=(r()-0.5)*24;x.fillStyle=rgb(base,tint);x.fillRect(tx*32+1,ty*32+1,30,30);
+  for(let k=0;k<40;k++){x.fillStyle=rgb(base,tint+(r()-0.5)*30);x.fillRect(tx*32+1+Math.floor(r()*30),ty*32+1+Math.floor(r()*30),2,2);}
+  x.fillStyle=rgb(base,tint+18);x.fillRect(tx*32+1,ty*32+1,30,1);x.fillRect(tx*32+1,ty*32+1,1,30);}
+ return c;}
+function noiseCanvas(base,amt,seed){const c=cnv(32,32),x=c.getContext('2d');grain(x,32,32,base,amt,mkRand(seed),2);return c;}
+function roofCanvas(seed){const w=64,h=64,c=cnv(w,h),x=c.getContext('2d'),r=mkRand(seed),base=[168,54,46];
+ x.fillStyle=rgb(base,-45);x.fillRect(0,0,w,h);
+ for(let row=0;row<8;row++){const off=(row%2)*8;for(let i=-1;i<9;i++){x.fillStyle=rgb(base,(r()-0.5)*36);x.fillRect(i*16+off+1,row*8+1,14,6);}}
+ return c;}
+function woodCanvas(seed){const w=64,h=64,c=cnv(w,h),x=c.getContext('2d'),r=mkRand(seed),base=[118,80,46];
+ x.fillStyle=rgb(base);x.fillRect(0,0,w,h);
+ for(let i=0;i<w;i+=2){x.fillStyle=rgb(base,(r()-0.5)*40);x.fillRect(i,0,2,h);}
+ for(let p=0;p<4;p++){x.fillStyle=rgb(base,-50);x.fillRect(0,p*16,w,1);}
+ return c;}
+function boardCanvas(title,sub){const w=256,h=128,c=cnv(w,h),x=c.getContext('2d');
+ x.fillStyle='#d9d2b8';x.fillRect(0,0,w,h);x.fillStyle='#fbf6e6';x.fillRect(5,5,w-10,h-10);
+ x.fillStyle='#b9b196';x.fillRect(5,h-7,w-10,2);x.fillRect(w-7,5,2,h-10);
+ x.fillStyle='#c23b3b';[[11,11],[w-16,11],[11,h-16],[w-16,h-16]].forEach(p=>x.fillRect(p[0],p[1],5,5));
+ x.textAlign='center';x.textBaseline='middle';x.fillStyle='#1d221c';
+ const fs=26;x.font=`700 ${fs}px "Pixelify Sans", monospace`;
+ const lines=[];let cur='';title.split(' ').forEach(wd=>{const t=cur?cur+' '+wd:wd;if(x.measureText(t).width>w-40&&cur){lines.push(cur);cur=wd;}else cur=t;});if(cur)lines.push(cur);
+ const lh=fs+2;let y=h/2-8-(lines.length-1)*lh/2;lines.forEach(l=>{x.fillText(l,w/2,y);y+=lh;});
+ x.font='400 13px "Pixelify Sans", monospace';x.fillStyle='#6b6f66';x.fillText(sub,w/2,h-21);
+ return c;}
+function texFrom(c){const t=new THREE.CanvasTexture(c);t.magFilter=THREE.NearestFilter;t.minFilter=THREE.LinearMipmapLinearFilter;t.wrapS=t.wrapT=THREE.RepeatWrapping;t.anisotropy=ANISO;return t;}
+function mat(c,rx,ry,color){const t=texFrom(c);t.repeat.set(rx,ry);return new THREE.MeshLambertMaterial({map:t,color:color===undefined?0xffffff:color});}
+function faceMat(title,sub){const t=texFrom(boardCanvas(title,sub));t.wrapS=t.wrapT=THREE.ClampToEdgeWrapping;return new THREE.MeshLambertMaterial({map:t});}
+function labelSprite(text,scale){scale=scale||1;const c=cnv(256,64),x=c.getContext('2d');let fs=34;x.font=`700 ${fs}px "Pixelify Sans", monospace`;
+ while(x.measureText(text).width>236&&fs>14){fs-=2;x.font=`700 ${fs}px "Pixelify Sans", monospace`;}
+ x.textAlign='center';x.textBaseline='middle';x.lineWidth=5;x.lineJoin='round';x.strokeStyle='#0e0f14';x.strokeText(text,128,33);x.fillStyle='#fff';x.fillText(text,128,33);
+ const t=texFrom(c);t.wrapS=t.wrapT=THREE.ClampToEdgeWrapping;const s=new THREE.Sprite(new THREE.SpriteMaterial({map:t,transparent:true,depthWrite:false}));s.scale.set(3.2*scale,0.8*scale,1);return s;}
+function makeCanvases(){C.tile=tileCanvas([98,106,96],3);C.tileCool=tileCanvas([104,108,118],5);C.hedge=noiseCanvas([52,92,40],26,9);C.roof=roofCanvas(11);C.wood=woodCanvas(13);C.dark=noiseCanvas([44,46,50],10,17);C.brick={};}
+function brickFor(tint){const k=tint.join(',');if(!C.brick[k])C.brick[k]=brickCanvas(tint,7);return C.brick[k];}
+
+/* ---- geometry helpers ---- */
+function box(w,h,d,m,x,y,z,ry){const g=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),m);g.position.set(x,y,z);if(ry)g.rotation.y=ry;world.add(g);return g;}
+function wallPos(side,along){const w=G.bounds.w,d=G.bounds.d,hw=w/2,hd=d/2;
+ if(side==='N')return{x:along,z:-hd,rot:0,nx:0,nz:1};if(side==='S')return{x:along,z:hd,rot:Math.PI,nx:0,nz:-1};
+ if(side==='E')return{x:hw,z:along,rot:-Math.PI/2,nx:-1,nz:0};return{x:-hw,z:along,rot:Math.PI/2,nx:1,nz:0};}
+function wallPoint(side,t){const L=(side==='N'||side==='S')?G.bounds.w:G.bounds.d;return wallPos(side,t*(L/2-2.5));}
+function wallSeg(side,a,b,c){const w=G.bounds.w,d=G.bounds.d,H=G.bounds.H,len=b-a,mid=(a+b)/2;if(len<=0)return;const m=mat(c,len/2.5,H/2.5);
+ if(side==='N')box(len,H,1,m,mid,H/2,-d/2-0.5);else if(side==='S')box(len,H,1,m,mid,H/2,d/2+0.5);
+ else if(side==='E')box(1,H,len,m,w/2+0.5,H/2,mid);else box(1,H,len,m,-w/2-0.5,H/2,mid);}
+const DW=3,DH=3.4;
+function wall(side,doorAt,c){const w=G.bounds.w,d=G.bounds.d,H=G.bounds.H,L=(side==='N'||side==='S')?w:d;
+ if(doorAt==null){wallSeg(side,-L/2-0.5,L/2+0.5,c);return;}
+ wallSeg(side,-L/2-0.5,doorAt-DW/2,c);wallSeg(side,doorAt+DW/2,L/2+0.5,c);
+ const lh=H-DH,m=mat(c,DW/2.5,lh/2.5);
+ if(side==='N')box(DW,lh,1,m,doorAt,DH+lh/2,-d/2-0.5);else if(side==='S')box(DW,lh,1,m,doorAt,DH+lh/2,d/2+0.5);
+ else if(side==='E')box(1,lh,DW,m,w/2+0.5,DH+lh/2,doorAt);else box(1,lh,DW,m,-w/2-0.5,DH+lh/2,doorAt);}
+function makeDoor(door){const p=wallPos(door.side,door.at);const g=new THREE.Group();g.position.set(p.x,0,p.z);g.rotation.y=p.rot;
+ const portal=new THREE.Mesh(new THREE.BoxGeometry(DW-0.2,DH-0.2,0.6),new THREE.MeshBasicMaterial({color:0x07060f}));portal.position.set(0,(DH-0.2)/2,-0.35);g.add(portal);
+ const fm=new THREE.MeshLambertMaterial({color:0xd8ccc2});
+ [-1,1].forEach(s=>{const post=new THREE.Mesh(new THREE.BoxGeometry(0.36,DH+0.2,0.5),fm);post.position.set(s*(DW/2+0.18),(DH+0.2)/2,0.1);g.add(post);});
+ const top=new THREE.Mesh(new THREE.BoxGeometry(DW+0.72,0.42,0.5),fm);top.position.set(0,DH+0.21,0.1);g.add(top);
+ const lbl=labelSprite(door.label,1.3);lbl.position.set(0,DH+1.15,0.7);g.add(lbl);
+ const lamp=new THREE.PointLight(0xffc27a,0.85,11);lamp.position.set(0,3.2,1.4);g.add(lamp);
+ world.add(g);G.doors.push({x:p.x,z:p.z,to:door.to});}
+function makeBoard(b){const sec=S[b.key];const p=wallPoint(b.side,b.t);const g=new THREE.Group();
+ g.position.set(p.x+p.nx*0.12,1.75,p.z+p.nz*0.12);g.rotation.y=p.rot;
+ const frame=new THREE.Mesh(new THREE.BoxGeometry(3.0,1.7,0.14),mat(C.wood,3,1));g.add(frame);
+ const fm=faceMat(sec.label,TOUCH?'tap E to read':'press E to read');const face=new THREE.Mesh(new THREE.PlaneGeometry(2.8,1.4),fm);face.position.z=0.08;g.add(face);
+ const lbl=labelSprite(sec.label);lbl.position.set(0,1.4,0.3);g.add(lbl);
+ world.add(g);
+ G.inter.push({x:g.position.x+p.nx*1.0,z:g.position.z+p.nz*1.0,r:2.5,key:b.key,mat:fm,label:sec.label});}
+function makeTorch(side,t){const p=wallPoint(side,t);const g=new THREE.Group();g.position.set(p.x+p.nx*0.25,2.2,p.z+p.nz*0.25);g.rotation.y=p.rot;
+ const stick=new THREE.Mesh(new THREE.BoxGeometry(0.12,0.7,0.12),mat(C.wood,1,1));stick.rotation.x=0.35;g.add(stick);
+ const flame=new THREE.Mesh(new THREE.BoxGeometry(0.22,0.3,0.22),new THREE.MeshBasicMaterial({color:0xffb347}));flame.position.set(0,0.5,0.16);g.add(flame);
+ const light=new THREE.PointLight(0xffa050,0.9,9);light.position.set(0,0.65,0.6);g.add(light);
+ world.add(g);G.torches.push({light,flame,seed:Math.random()*10});}
+function hedge(side,a,b){const w=G.bounds.w,d=G.bounds.d,hw=w/2,hd=d/2,len=b-a,mid=(a+b)/2,m=mat(C.hedge,len/1.5,1);let x,z,sx,sz;
+ if(side==='N'){x=mid;z=-hd+0.55;sx=len;sz=0.9;}else if(side==='S'){x=mid;z=hd-0.55;sx=len;sz=0.9;}else if(side==='E'){x=hw-0.55;z=mid;sx=0.9;sz=len;}else{x=-hw+0.55;z=mid;sx=0.9;sz=len;}
+ box(sx,1,sz,m,x,0.5,z);G.colliders.push({x1:x-sx/2,z1:z-sz/2,x2:x+sx/2,z2:z+sz/2});}
+function tree(x,z){const trunk=new THREE.Mesh(new THREE.CylinderGeometry(0.25,0.4,2.4,7),mat(C.wood,1,2));trunk.position.set(x,1.2,z);world.add(trunk);
+ const lm=new THREE.MeshLambertMaterial({color:0x3e7c39});
+ const f1=new THREE.Mesh(new THREE.DodecahedronGeometry(1.7,0),lm);f1.position.set(x,3.2,z);world.add(f1);
+ const f2=new THREE.Mesh(new THREE.DodecahedronGeometry(1.2,0),lm);f2.position.set(x+0.5,4.3,z-0.3);world.add(f2);
+ G.colliders.push({cx:x,cz:z,r:0.7});}
+function welcomeBoard(){const bx=-5.2,bz=-2.6,rot=Math.atan2(0-bx,5-bz);const g=new THREE.Group();g.position.set(bx,0,bz);g.rotation.y=rot;const wm=mat(C.wood,1,2);
+ [-1.35,1.35].forEach(x=>{const p=new THREE.Mesh(new THREE.CylinderGeometry(0.09,0.11,2.6,6),wm);p.position.set(x,1.3,0);g.add(p);});
+ const frame=new THREE.Mesh(new THREE.BoxGeometry(3.0,1.7,0.14),mat(C.wood,3,1));frame.position.y=1.75;g.add(frame);
+ const fm=faceMat('Bulletin Board',TOUCH?'tap E to read':'press E to read');const face=new THREE.Mesh(new THREE.PlaneGeometry(2.8,1.4),fm);face.position.set(0,1.75,0.08);g.add(face);
+ const lbl=labelSprite('Welcome board');lbl.position.set(0,3.2,0);g.add(lbl);
+ const lamp=new THREE.PointLight(0xfff0c0,0.6,7);lamp.position.set(0,3,1.2);g.add(lamp);
+ world.add(g);const fx=Math.sin(rot),fz=Math.cos(rot);
+ G.inter.push({x:bx+fx*1.2,z:bz+fz*1.2,r:2.6,key:'welcome',mat:fm,label:'Welcome board'});
+ G.colliders.push({cx:bx,cz:bz,r:1.5});}
+function lobbyExtras(R){const w=G.bounds.w,d=G.bounds.d,H=G.bounds.H,hw=w/2,hd=d/2,bc=brickFor(R.tint);
+ [[-1,-1],[1,-1],[1,1],[-1,1]].forEach(([sx,sz])=>{
+  const t=new THREE.Mesh(new THREE.CylinderGeometry(2.6,2.8,H+4,10),mat(bc,7,4));t.position.set(sx*(hw+0.5),(H+4)/2,sz*(hd+0.5));world.add(t);
+  const r=new THREE.Mesh(new THREE.ConeGeometry(3.4,4.6,10),mat(C.roof,6,2));r.position.set(sx*(hw+0.5),H+4+2.3,sz*(hd+0.5));world.add(r);});
+ const mm=mat(bc,1,1);
+ for(let i=-hw+3;i<=hw-3;i+=3){box(1.2,1.1,1.2,mm,i,H+0.55,-hd-0.5);box(1.2,1.1,1.2,mm,i,H+0.55,hd+0.5);}
+ for(let i=-hd+3;i<=hd-3;i+=3){box(1.2,1.1,1.2,mm,-hw-0.5,H+0.55,i);box(1.2,1.1,1.2,mm,hw+0.5,H+0.55,i);}
+ ['N','S'].forEach(s=>{hedge(s,-hw+3.2,-2.4);hedge(s,2.4,hw-3.2);});
+ ['E','W'].forEach(s=>{hedge(s,-hd+3.2,-2.4);hedge(s,2.4,hd-3.2);});
+ [[-12,-12],[12,-12],[-12,12],[12,12]].forEach(([x,z])=>tree(x,z));
+ welcomeBoard();}
+function makeSky(){const n=800,pos=new Float32Array(n*3),r=mkRand(1234);
+ for(let i=0;i<n;i++){const th=r()*Math.PI*2,ph=Math.acos(1-r()*0.85),R=150;pos[i*3]=R*Math.sin(ph)*Math.cos(th);pos[i*3+1]=R*Math.cos(ph);pos[i*3+2]=R*Math.sin(ph)*Math.sin(th);}
+ const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(pos,3));
+ const sky=new THREE.Group();scene.add(sky);DN.sky=sky;
+ DN.stars=new THREE.Points(g,new THREE.PointsMaterial({color:0xffffff,size:2,sizeAttenuation:false,fog:false,transparent:true}));sky.add(DN.stars);
+ DN.moon=new THREE.Mesh(new THREE.SphereGeometry(5,10,8),new THREE.MeshBasicMaterial({color:0xece7cf,fog:false,transparent:true}));DN.moon.position.set(70,62,-100);sky.add(DN.moon);
+ DN.sun=new THREE.Mesh(new THREE.SphereGeometry(7,12,10),new THREE.MeshBasicMaterial({color:0xfff3b0,fog:false,transparent:true}));DN.sun.position.set(-85,95,-75);sky.add(DN.sun);
+ const cm=new THREE.MeshBasicMaterial({color:0xffffff,fog:false,transparent:true,opacity:0});DN.cloudMat=cm;DN.clouds=[];
+ for(let i=0;i<9;i++){const c=new THREE.Group();const s=1.6+r()*1.6;[[0,0,0,9,3,5],[-5,-0.6,1,6,2.2,4],[5.5,-0.4,-1,7,2.4,4.5],[1,2,0.5,5,2,3.5]].forEach(b=>{const m=new THREE.Mesh(new THREE.BoxGeometry(b[3]*s,b[4]*s,b[5]*s),cm);m.position.set(b[0]*s,b[1]*s,b[2]*s);c.add(m);});
+  c.position.set(-140+r()*280,38+r()*22,-60-r()*90);c.userData.speed=0.5+r()*0.6;sky.add(c);DN.clouds.push(c);}}
+function makePlayer(){const g=new THREE.Group();
+ const skin=new THREE.MeshLambertMaterial({color:0xf2c9a6}),tunic=new THREE.MeshLambertMaterial({color:0x5f8d3f}),hat=new THREE.MeshLambertMaterial({color:0xc03b3b}),dark=new THREE.MeshLambertMaterial({color:0x4b3626});
+ const body=new THREE.Mesh(new THREE.CylinderGeometry(0.3,0.4,0.75,8),tunic);body.position.y=0.72;g.add(body);
+ const head=new THREE.Mesh(new THREE.SphereGeometry(0.28,10,8),skin);head.position.y=1.35;g.add(head);
+ const beard=new THREE.Mesh(new THREE.ConeGeometry(0.2,0.42,6),new THREE.MeshLambertMaterial({color:0xeeeeee}));beard.rotation.x=Math.PI;beard.position.set(0,1.1,0.17);g.add(beard);
+ const cone=new THREE.Mesh(new THREE.ConeGeometry(0.34,0.9,8),hat);cone.position.y=1.98;g.add(cone);
+ const eye=new THREE.MeshBasicMaterial({color:0x222222});[-0.1,0.1].forEach(x=>{const e=new THREE.Mesh(new THREE.BoxGeometry(0.06,0.06,0.04),eye);e.position.set(x,1.4,0.26);g.add(e);});
+ const arms=[-1,1].map(s=>{const a=new THREE.Mesh(new THREE.CylinderGeometry(0.08,0.08,0.55,6),tunic);a.position.set(s*0.42,0.85,0);g.add(a);return a;});
+ const legs=[-1,1].map(s=>{const l=new THREE.Mesh(new THREE.BoxGeometry(0.16,0.36,0.16),dark);l.position.set(s*0.13,0.18,0);g.add(l);return l;});
+ const sh=new THREE.Mesh(new THREE.CircleGeometry(0.5,12),new THREE.MeshBasicMaterial({color:0x000000,transparent:true,opacity:0.4,depthWrite:false}));sh.rotation.x=-Math.PI/2;sh.position.y=0.02;g.add(sh);
+ const light=new THREE.PointLight(0xffe0b0,0.7,7);light.position.y=1.6;g.add(light);
+ const lbl=labelSprite('guest',0.8);lbl.position.y=2.75;g.add(lbl);
+ return{group:g,arms,legs,heading:Math.PI,x:0,z:5,anim:0,amp:0};}
+
+/* ---- room lifecycle ---- */
+function clearWorld(){const kill=[];world.traverse(o=>{if(o!==world)kill.push(o);});
+ kill.forEach(o=>{if(o.geometry)o.geometry.dispose();if(o.material){[].concat(o.material).forEach(m=>{if(m.map)m.map.dispose();m.dispose();});}});
+ while(world.children.length)world.remove(world.children[0]);}
+function buildRoom(key){clearWorld();const R=ROOMS[key];G.roomKey=key;G.bounds={w:R.w,d:R.d,H:R.H,indoor:R.indoor};
+ G.inter=[];G.colliders=[];G.doors=[];G.torches=[];G.near=null;
+ const w=R.w,d=R.d,H=R.H,bc=brickFor(R.tint);
+ const fc=R.floor==='wood'?C.wood:(R.indoor?C.tileCool:C.tile),fr=R.floor==='wood'?3:4;
+ const fl=new THREE.Mesh(new THREE.PlaneGeometry(w+2,d+2),mat(fc,(w+2)/fr,(d+2)/fr));fl.rotation.x=-Math.PI/2;world.add(fl);
+ if(R.indoor){const ce=new THREE.Mesh(new THREE.PlaneGeometry(w+2,d+2),mat(C.dark,(w+2)/4,(d+2)/4));ce.rotation.x=Math.PI/2;ce.position.y=H;world.add(ce);}
+ const doors=R.doors||[{side:'S',at:0,to:'lobby',label:'Back to lobby'}];
+ ['N','E','S','W'].forEach(side=>{const dr=doors.find(x=>x.side===side);wall(side,dr?dr.at:null,bc);});
+ doors.forEach(makeDoor);
+ (R.boards||[]).forEach(makeBoard);
+ (R.torches||[]).forEach(t=>makeTorch(t[0],t[1]));
+ DN.amb=new THREE.AmbientLight(0xffffff,1);world.add(DN.amb);
+ DN.hemi=new THREE.HemisphereLight(0xffffff,0x000000,1);world.add(DN.hemi);
+ DN.dir=null;if(!R.indoor){DN.dir=new THREE.DirectionalLight(0xffffff,0.5);DN.dir.position.set(30,60,-20);world.add(DN.dir);}
+ scene.fog=new THREE.Fog(0x0d0b1c,R.indoor?14:24,R.indoor?46:95);
+ if(key==='lobby')lobbyExtras(R);
+ DN.dirty=true;applyDN();}
+function placePlayer(key,prev,viaDoor){const p=player;G.camYaw=0;
+ if(key==='lobby'){const dr=prev&&ROOMS.lobby.doors.find(x=>x.to===prev);
+  if(dr&&viaDoor){const q=wallPos(dr.side,dr.at);p.x=q.x+q.nx*2.8;p.z=q.z+q.nz*2.8;p.heading=Math.atan2(q.nx,q.nz);}
+  else{p.x=0;p.z=5;p.heading=Math.PI;}}
+ else{p.x=0;p.z=ROOMS[key].d/2-5.0;p.heading=Math.PI;}
+ p.group.position.set(p.x,0,p.z);p.group.rotation.y=p.heading;}
+function enterRoom(key,viaDoor,instant){if(G.transition||!ROOMS[key])return;G.transition=true;closeWindow();closeMenu();
+ const doIt=()=>{const prev=G.roomKey;buildRoom(key);placePlayer(key,prev,viaDoor);G.cooldown=1.2;updateHUD();updateCamera(1);G.transition=false;if(key==='music')jukeEnter();else jukeLeave();};
+ if(instant){doIt();return;}
+ const f=$('#fade');f.classList.add('on');setTimeout(()=>{doIt();requestAnimationFrame(()=>f.classList.remove('on'));},360);}
+function goRoom(k){if(k===G.roomKey||G.transition)return;enterRoom(k,null,false);}
+
+/* ---- day / night ---- */
+const DN={t:0,target:0,dirty:true,
+ night:{bg:0x0d0b1c,fog:0x0d0b1c,fogN:24,fogF:95,amb:0x33334f,ambI:1.0,hsky:0x4a4a86,hgnd:0x1b1a14,hI:0.75,dir:0x9fb0ff,dirI:0.55,dx:30,dy:60,dz:-20,iamb:0x6a5a48,iambI:0.9,ihI:0.35},
+ day:{bg:0x8dbfea,fog:0xb9d6ee,fogN:34,fogF:170,amb:0xcdd8e6,ambI:0.55,hsky:0xe4efff,hgnd:0x7a7452,hI:0.55,dir:0xfff0cc,dirI:0.85,dx:-40,dy:70,dz:-30,iamb:0x8d7d69,iambI:1.0,ihI:0.5}};
+const dayPref=()=>{try{return localStorage.getItem('rifff-day')==='1';}catch(e){return false;}};
+function setDay(v,instant){DN.target=v?1:0;if(instant)DN.t=DN.target;DN.dirty=true;try{localStorage.setItem('rifff-day',v?'1':'0');}catch(e){}
+ const b=$('#dayBtn');if(b){b.textContent=v?'\u2600 Day':'\u263e Night';b.setAttribute('aria-pressed',v?'true':'false');}}
+function applyDN(){const R=ROOMS[G.roomKey];if(!R||!DN.sky||!DN.amb)return;const t=DN.t,n=DN.night,d=DN.day;DN.c2=DN.c2||new THREE.Color();
+ const L=(a,b)=>a+(b-a)*t,col=(o,a,b)=>o.setHex(a).lerp(DN.c2.setHex(b),t);
+ col(scene.background,n.bg,d.bg);
+ if(R.indoor){scene.fog.color.setHex(0x0d0b1c);col(DN.amb.color,n.iamb,d.iamb);DN.amb.intensity=L(n.iambI,d.iambI);col(DN.hemi.color,n.hsky,d.hsky);col(DN.hemi.groundColor,n.hgnd,d.hgnd);DN.hemi.intensity=L(n.ihI,d.ihI);}
+ else{col(scene.fog.color,n.fog,d.fog);scene.fog.near=L(n.fogN,d.fogN);scene.fog.far=L(n.fogF,d.fogF);
+  col(DN.amb.color,n.amb,d.amb);DN.amb.intensity=L(n.ambI,d.ambI);col(DN.hemi.color,n.hsky,d.hsky);col(DN.hemi.groundColor,n.hgnd,d.hgnd);DN.hemi.intensity=L(n.hI,d.hI);
+  if(DN.dir){col(DN.dir.color,n.dir,d.dir);DN.dir.intensity=L(n.dirI,d.dirI);DN.dir.position.set(L(n.dx,d.dx),L(n.dy,d.dy),L(n.dz,d.dz));}}
+ DN.sky.visible=!R.indoor;DN.stars.material.opacity=1-t;DN.stars.visible=t<0.999;DN.moon.material.opacity=1-t;DN.moon.visible=t<0.999;
+ DN.sun.material.opacity=t;DN.sun.visible=t>0.001;DN.cloudMat.opacity=t*0.96;DN.clouds.forEach(c=>{c.visible=t>0.001;});}
+function tickDN(dt){if(Math.abs(DN.t-DN.target)>0.0005||DN.dirty){DN.t+=(DN.target-DN.t)*Math.min(1,dt*1.6);if(Math.abs(DN.t-DN.target)<0.0005)DN.t=DN.target;DN.dirty=false;applyDN();}
+ if(DN.t>0.001&&DN.sky.visible)DN.clouds.forEach(c=>{c.position.x+=dt*c.userData.speed;if(c.position.x>150)c.position.x=-150;});}
+
+/* ---- jukebox: SoundCloud widget that plays while you are in the music room ---- */
+const J={w:null,idx:0,loadedIdx:-1,playing:false,ready:false,loading:null,userPaused:false,want:false,failed:false};
+const trackUrl=i=>'https://api.soundcloud.com/tracks/'+D.compose[i].id;
+const WOPT='&show_artwork=false&visual=false&buying=false&sharing=false&download=false&show_playcount=false&show_user=false&hide_related=true';
+function jukeLoadApi(){if(window.SC&&SC.Widget)return Promise.resolve();return new Promise((res,rej)=>{const s=document.createElement('script');s.src='https://w.soundcloud.com/player/api.js';s.async=true;s.onload=()=>window.SC&&SC.Widget?res():rej(new Error('SC missing'));s.onerror=()=>rej(new Error('SC script failed'));document.head.appendChild(s);});}
+function jukeUI(status){const c=D.compose[J.idx];$('#jukeTitle').textContent=c.title;$('#jukeLink').href=c.url;$('#jukePlay').textContent=J.playing?'\u275a\u275a':'\u25b6';
+ $('#jukeStatus').textContent=status||(J.failed?'Player unavailable':J.playing?'Playing':J.ready?'Paused':'Loading\u2026');}
+function jukeInit(){if(J.loading)return J.loading;
+ J.loading=jukeLoadApi().then(()=>new Promise((res,rej)=>{const f=document.createElement('iframe');f.id='scFrame';f.title='SoundCloud player';f.setAttribute('allow','autoplay');
+  f.src='https://w.soundcloud.com/player/?url='+encodeURIComponent(trackUrl(J.idx))+'&auto_play=false'+WOPT;J.loadedIdx=J.idx;$('#juke').appendChild(f);
+  const w=J.w=SC.Widget(f),E=SC.Widget.Events,timer=setTimeout(()=>rej(new Error('widget timeout')),15000);
+  w.bind(E.READY,()=>{clearTimeout(timer);J.ready=true;w.setVolume(80);jukeUI();res();});
+  w.bind(E.PLAY,()=>{J.playing=true;jukeUI();});w.bind(E.PAUSE,()=>{J.playing=false;jukeUI();});
+  w.bind(E.FINISH,()=>{J.playing=false;if(J.want)jukePlay(J.idx+1);});
+  w.bind(E.ERROR,()=>{jukeUI('Track could not be loaded');});}));
+ J.loading.catch(()=>{J.failed=true;J.loading=null;jukeUI();});return J.loading;}
+function jukePlay(i){const n=D.compose.length;if(i!==undefined)J.idx=((i%n)+n)%n;J.userPaused=false;J.want=true;if(J.failed){jukeUI();return;}jukeUI();
+ jukeInit().then(()=>{if(!J.want)return;
+  if(J.loadedIdx!==J.idx){J.loadedIdx=J.idx;J.w.load(trackUrl(J.idx),{auto_play:true,show_artwork:false,visual:false,buying:false,sharing:false,download:false,show_playcount:false,show_user:false,hide_related:true,callback:()=>{J.w.setVolume(80);}});}
+  else J.w.play();
+  setTimeout(()=>{if(J.want&&!J.playing&&!J.failed)jukeUI((TOUCH?'Tap':'Click')+' \u25b6 to play');},3000);}).catch(()=>{});}
+function jukePause(byUser){J.want=false;if(byUser)J.userPaused=true;if(J.w&&J.ready&&J.playing)J.w.pause();}
+function jukeEnter(){$('#juke').hidden=false;jukeUI();if(!J.userPaused)jukePlay();}
+function jukeLeave(){$('#juke').hidden=true;jukePause(false);}
+function jukeToggle(){if(J.playing)jukePause(true);else jukePlay();}
+function bindJuke(){$('#jukePlay').addEventListener('click',jukeToggle);$('#jukePrev').addEventListener('click',()=>jukePlay(J.idx-1));$('#jukeNext').addEventListener('click',()=>jukePlay(J.idx+1));
+ $('#dayBtn').addEventListener('click',()=>setDay(DN.target<0.5,false));}
+
+/* ---- HUD ---- */
+const svg=r=>`<svg viewBox="0 0 16 16" aria-hidden="true">${r.map(q=>`<rect x="${q[0]}" y="${q[1]}" width="${q[2]}" height="${q[3]}"${q[4]?` fill="${q[4]}"`:''}/>`).join('')}</svg>`;
+const ICON={
+ castle:svg([[2,7,12,7],[2,4,2,3],[7,4,2,3],[12,4,2,3],[6,10,4,4,'#c9cec7']]),
+ person:svg([[6,2,4,4],[4,7,8,6],[5,13,2,2],[9,13,2,2]]),
+ folder:svg([[2,3,5,2],[2,5,12,9],[4,8,8,4,'#c9cec7']]),
+ scroll:svg([[4,2,8,12],[6,5,4,1,'#c9cec7'],[6,7,4,1,'#c9cec7'],[6,9,4,1,'#c9cec7']]),
+ note:svg([[9,2,2,9],[9,2,5,2],[12,4,2,3],[5,10,6,4]]),
+ help:svg([[5,2,6,2],[10,4,2,3],[7,7,4,2],[7,9,2,2],[7,13,2,2]])};
+function buildBar(){const BAR=[['lobby','Lobby',ICON.castle],['profile','Profile',ICON.person],['portfolio','Portfolio',ICON.folder],['resume','Resume',ICON.scroll],['music','Music',ICON.note],['help','Help',ICON.help]];
+ $('#bar .btns').innerHTML=BAR.map(b=>`<button type="button" data-go="${b[0]}">${b[2]}<span>${b[1]}</span></button>`).join('');
+ $('#bar').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const k=b.dataset.go;if(k==='help'){if(G.winOpen)closeWindow();else openWindow('welcome');}else goRoom(k);});}
+function buildMenu(){const m=$('#locMenu');m.innerHTML=Object.keys(ROOMS).map(k=>`<button type="button" data-room="${k}">${esc(ROOMS[k].name)}</button>`).join('');
+ m.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;closeMenu();goRoom(b.dataset.room);});
+ $('#locBtn').addEventListener('click',e=>{e.stopPropagation();m.hidden=!m.hidden;});
+ document.addEventListener('click',closeMenu);}
+function closeMenu(){const m=$('#locMenu');if(m)m.hidden=true;}
+function updateHUD(){const R=ROOMS[G.roomKey];$('#locBtn').textContent=R.name+' ▾';
+ document.querySelectorAll('#bar button').forEach(b=>b.classList.toggle('on',b.dataset.go===G.roomKey));G.tipIdx=0;G.tipT=0;updateNotice();}
+function updateNotice(){const R=ROOMS[G.roomKey];if(!R)return;const n1=$('#notice .n1'),n2=$('#notice .n2');
+ if(G.winOpen){n1.textContent=R.name+' · Reading';n2.textContent='Close the window to walk again.';}
+ else if(G.near){n1.textContent=R.name+' · Board';n2.innerHTML=(TOUCH?'Tap':'Press')+' <b>E</b> to read “'+esc(G.near.label)+'”';}
+ else{const tips=R.tips||TIPS;n1.textContent=R.name+' · Tip';n2.textContent=tips[G.tipIdx%tips.length];}
+ $('#eBtn').classList.toggle('ready',!!G.near&&!G.winOpen);}
+
+/* ---- windows ---- */
+function openWindow(key){const sec=S[key];if(!sec)return;closeWindow();closeMenu();
+ const el=document.createElement('div');el.className='win';el.setAttribute('role','dialog');el.setAttribute('aria-label',sec.title);
+ el.innerHTML=`<div class="tb"><span class="t">${esc(sec.title)}</span><button type="button" class="btn x" aria-label="Close">×</button></div><div class="tools"><button type="button" class="btn walk">Walk around</button></div><div class="body">${sec.html()}</div><div class="status">Ready • ${esc(sec.status||'')}</div>`;
+ $('#winLayer').appendChild(el);G.winOpen=true;K.f=K.b=K.l=K.r=false;G.stick.x=G.stick.y=0;
+ el.querySelector('.x').addEventListener('click',closeWindow);el.querySelector('.walk').addEventListener('click',closeWindow);
+ makeDraggable(el,el.querySelector('.tb'));if(sec.wire)sec.wire(el);else el.querySelector('.walk').focus({preventScroll:true});updateNotice();}
+function closeWindow(){const l=$('#winLayer');if(!l||!l.firstChild)return;l.innerHTML='';G.winOpen=false;if(G.roomKey)updateNotice();}
+function makeDraggable(el,handle){let d=null;
+ handle.addEventListener('pointerdown',e=>{if(e.target.closest('button'))return;const r=el.getBoundingClientRect();d={dx:e.clientX-r.left,dy:e.clientY-r.top,id:e.pointerId};
+  el.style.transform='none';el.style.left=r.left+'px';el.style.top=r.top+'px';handle.setPointerCapture(e.pointerId);e.preventDefault();});
+ handle.addEventListener('pointermove',e=>{if(!d||e.pointerId!==d.id)return;el.style.left=clamp(e.clientX-d.dx,-el.offsetWidth+80,innerWidth-80)+'px';el.style.top=clamp(e.clientY-d.dy,0,innerHeight-40)+'px';});
+ const up=e=>{if(d&&e.pointerId===d.id)d=null;};handle.addEventListener('pointerup',up);handle.addEventListener('pointercancel',up);}
+function interact(){if(G.transition||!G.near)return;const k=G.near.key;if(/^track\d+$/.test(k))jukePlay(+k.slice(5));openWindow(k);}
+
+/* ---- input ---- */
+function bindInput(){
+ const KEYMAP={KeyW:'f',ArrowUp:'f',KeyS:'b',ArrowDown:'b',KeyA:'l',ArrowLeft:'l',KeyD:'r',ArrowRight:'r'};
+ window.addEventListener('keydown',e=>{if($('#game').hidden||paused)return;if(e.target&&/INPUT|TEXTAREA|SELECT/.test(e.target.tagName))return;
+  const k=KEYMAP[e.code];if(k){K[k]=true;e.preventDefault();return;}
+  if(e.code==='ShiftLeft'||e.code==='ShiftRight')G.run=true;
+  if(e.code==='KeyE'){if(G.winOpen)closeWindow();else interact();e.preventDefault();return;}
+  if((e.code==='Enter'||e.code==='Space')&&!G.winOpen){interact();e.preventDefault();return;}
+  if(e.code==='Escape'){if(G.winOpen)closeWindow();else closeMenu();}
+  if(e.code==='KeyN'&&!e.repeat)setDay(DN.target<0.5,false);
+  if(e.code==='KeyM'&&!e.repeat&&(G.roomKey==='music'||J.ready))jukeToggle();});
+ window.addEventListener('keyup',e=>{const k=KEYMAP[e.code];if(k)K[k]=false;if(e.code==='ShiftLeft'||e.code==='ShiftRight')G.run=false;});
+ window.addEventListener('blur',()=>{K.f=K.b=K.l=K.r=false;G.run=false;});
+ const canvas=$('#c');let drag=null;
+ canvas.addEventListener('pointerdown',e=>{if(G.winOpen)return;drag={x:e.clientX,y:e.clientY,id:e.pointerId};canvas.setPointerCapture(e.pointerId);e.preventDefault();});
+ canvas.addEventListener('pointermove',e=>{if(!drag||e.pointerId!==drag.id)return;const dx=e.clientX-drag.x,dy=e.clientY-drag.y;drag.x=e.clientX;drag.y=e.clientY;
+  G.camYaw-=dx*0.006;G.camPitch=clamp(G.camPitch+dy*0.004,0.08,1.05);});
+ const endDrag=e=>{if(drag&&e.pointerId===drag.id)drag=null;};
+ canvas.addEventListener('pointerup',endDrag);canvas.addEventListener('pointercancel',endDrag);
+ canvas.addEventListener('wheel',e=>{G.camDist=clamp(G.camDist+e.deltaY*0.004,3,9);e.preventDefault();},{passive:false});
+ canvas.addEventListener('contextmenu',e=>e.preventDefault());
+ const stick=$('#stick'),knob=$('#knob');let sid=null,sc=null;
+ const moveStick=e=>{let dx=e.clientX-sc.x,dy=e.clientY-sc.y;const m=Math.hypot(dx,dy),max=44;if(m>max){dx*=max/m;dy*=max/m;}
+  knob.style.transform=`translate(${dx}px,${dy}px)`;const dz=v=>Math.abs(v)<0.15?0:v;G.stick.x=dz(dx/max);G.stick.y=dz(dy/max);};
+ stick.addEventListener('pointerdown',e=>{sid=e.pointerId;const r=stick.getBoundingClientRect();sc={x:r.left+r.width/2,y:r.top+r.height/2};stick.setPointerCapture(sid);moveStick(e);e.preventDefault();});
+ stick.addEventListener('pointermove',e=>{if(e.pointerId===sid)moveStick(e);});
+ const endStick=e=>{if(e.pointerId!==sid)return;sid=null;G.stick.x=G.stick.y=0;knob.style.transform='';};
+ stick.addEventListener('pointerup',endStick);stick.addEventListener('pointercancel',endStick);
+ $('#eBtn').addEventListener('click',()=>{if(G.winOpen)closeWindow();else interact();});
+ window.addEventListener('resize',resize);}
+
+/* ---- frame ---- */
+function resize(){if(!renderer)return;const w=innerWidth,h=innerHeight,s=Math.min(1,540/h);
+ renderer.setSize(Math.max(1,Math.floor(w*s)),Math.max(1,Math.floor(h*s)),false);camera.aspect=w/h;camera.updateProjectionMatrix();}
+function updateCamera(k){const p=player,ang=p.heading+G.camYaw+Math.PI,cp=Math.cos(G.camPitch),sp=Math.sin(G.camPitch),B=G.bounds;
+ // desired offset from the look-at point; shorten it along its own line so the camera never leaves the room
+ const ox=Math.sin(ang)*G.camDist*cp,oz=Math.cos(ang)*G.camDist*cp,oy=1.0+G.camDist*sp-1.5;
+ const lim=(o,lo,hi,c)=>o>1e-4?(hi-c)/o:o<-1e-4?(lo-c)/o:1;
+ let t=Math.min(1,lim(ox,-B.w/2+0.4,B.w/2-0.4,p.x),lim(oz,-B.d/2+0.4,B.d/2-0.4,p.z),lim(oy,0.6-1.5,(B.indoor?B.H-0.35:60)-1.5,0));
+ t=Math.max(0.42,t);
+ let tx=p.x+ox*t,tz=p.z+oz*t,ty=1.5+oy*t;
+ tx=clamp(tx,-B.w/2+0.35,B.w/2-0.35);tz=clamp(tz,-B.d/2+0.35,B.d/2-0.35);ty=clamp(ty,0.6,B.indoor?B.H-0.35:60);
+ tmpV.set(tx,ty,tz);if(k>=1)camera.position.copy(tmpV);else camera.position.lerp(tmpV,k);
+ camera.lookAt(p.x,1.5,p.z);}
+function update(dt){const p=player;let fwd=0,turn=0;
+ if(!G.winOpen&&!G.transition){if(K.f)fwd+=1;if(K.b)fwd-=1;if(K.l)turn+=1;if(K.r)turn-=1;fwd-=G.stick.y;turn-=G.stick.x;}
+ fwd=clamp(fwd,-1,1);turn=clamp(turn,-1,1);
+ if(turn)p.heading+=turn*2.4*dt;
+ if(fwd!==0&&Math.abs(G.camYaw)>0.001){p.heading+=G.camYaw;G.camYaw=0;}
+ const spd=(G.run?6.5:3.7)*fwd;
+ if(spd){p.x+=Math.sin(p.heading)*spd*dt;p.z+=Math.cos(p.heading)*spd*dt;}
+ const B=G.bounds;p.x=clamp(p.x,-B.w/2+0.5,B.w/2-0.5);p.z=clamp(p.z,-B.d/2+0.5,B.d/2-0.5);
+ for(const c of G.colliders){
+  if(c.r!==undefined){const dx=p.x-c.cx,dz=p.z-c.cz,dd=Math.hypot(dx,dz),min=c.r+PR;if(dd<min&&dd>1e-4){p.x=c.cx+dx/dd*min;p.z=c.cz+dz/dd*min;}}
+  else{const x1=c.x1-PR,x2=c.x2+PR,z1=c.z1-PR,z2=c.z2+PR;if(p.x>x1&&p.x<x2&&p.z>z1&&p.z<z2){const l=p.x-x1,r=x2-p.x,t=p.z-z1,b=z2-p.z,m=Math.min(l,r,t,b);
+   if(m===l)p.x=x1;else if(m===r)p.x=x2;else if(m===t)p.z=z1;else p.z=z2;}}}
+ const moving=Math.abs(spd)>0.01;if(moving)p.anim+=dt*(G.run?15:10);p.amp+=((moving?1:0)-p.amp)*Math.min(1,dt*10);
+ const s=Math.sin(p.anim)*p.amp;p.arms[0].rotation.x=s*0.7;p.arms[1].rotation.x=-s*0.7;p.legs[0].rotation.x=-s*0.6;p.legs[1].rotation.x=s*0.6;
+ p.group.position.set(p.x,Math.abs(s)*0.07,p.z);p.group.rotation.y=p.heading;
+ G.cooldown-=dt;
+ if(G.cooldown<=0&&!G.transition){for(const dr of G.doors){const dx=p.x-dr.x,dz=p.z-dr.z;if(dx*dx+dz*dz<1.3*1.3){enterRoom(dr.to,dr,false);break;}}}
+ let best=null,bd=1e9;for(const it of G.inter){const dx=p.x-it.x,dz=p.z-it.z,dd=dx*dx+dz*dz;if(dd<it.r*it.r&&dd<bd){bd=dd;best=it;}}
+ if(best!==G.near){if(G.near)G.near.mat.emissive.setHex(0x000000);if(best)best.mat.emissive.setHex(0x4a4626);G.near=best;updateNotice();}
+ for(const t of G.torches){const f=0.78+0.22*Math.sin(G.t*11+t.seed)*Math.sin(G.t*7.3+t.seed*2);t.light.intensity=f;t.flame.scale.y=0.8+0.5*f;}
+ G.tipT+=dt;if(G.tipT>7){G.tipT=0;G.tipIdx++;if(!G.near&&!G.winOpen)updateNotice();}
+ tickDN(dt);updateCamera(1-Math.exp(-dt*9));}
+function loop(){requestAnimationFrame(loop);if(paused||$('#game').hidden){clock.getDelta();return;}const dt=Math.min(0.05,clock.getDelta());G.t+=dt;update(dt);renderer.render(scene,camera);}
+
+function initGame(){const canvas=$('#c');renderer=new THREE.WebGLRenderer({canvas,antialias:false,powerPreference:'high-performance'});renderer.setPixelRatio(1);
+ scene=new THREE.Scene();scene.background=new THREE.Color(0x0d0b1c);camera=new THREE.PerspectiveCamera(62,1,0.1,300);world=new THREE.Group();scene.add(world);clock=new THREE.Clock();tmpV=_v();
+ ANISO=Math.min(4,renderer.capabilities.getMaxAnisotropy()||1);
+ makeCanvases();makeSky();player=makePlayer();scene.add(player.group);
+ resize();bindInput();buildMenu();buildBar();bindJuke();setDay(dayPref(),true);
+ enterRoom('lobby',null,true);
+ requestAnimationFrame(loop);}
+
+/* ---- mode switching ---- */
+function setHash(h){try{history.replaceState(null,'',location.pathname+location.search+h);}catch(e){}}
+async function showGame(){$('#plain').hidden=true;$('#game').hidden=false;setHash('#play');
+ if(started){paused=false;resize();if(G.roomKey==='music')jukeEnter();return;}
+ if(starting)return;starting=true;
+ const lw=$('#loadWin');lw.hidden=false;$('#loadBtns').hidden=true;$('#loadMsg').textContent='Fetching the 3D engine and building the courtyard.';$('#loadStatus').textContent='Please wait';
+ try{await loadThree();await fontReady();initGame();started=true;paused=false;lw.hidden=true;}
+ catch(err){console.error(err);$('#loadMsg').textContent='The 3D engine could not be loaded. Check the connection and try again, or read the plain site.';$('#loadBtns').hidden=false;$('#loadStatus').textContent='Error';}
+ starting=false;}
+function showPlain(){paused=true;closeWindow();if(started)jukeLeave();$('#game').hidden=true;$('#plain').hidden=false;setHash('#plain');window.scrollTo(0,0);}
+
+function boot(){buildPlain();const h=location.hash;const plainWanted=h==='#plain'||h.indexOf('#p-')===0||(h!=='#play'&&isMobile());
+ $('#toPlain').addEventListener('click',showPlain);
+ $('#plain').addEventListener('click',e=>{if(e.target.closest('.play'))showGame();});
+ $('#loadRetry').addEventListener('click',showGame);$('#loadPlain').addEventListener('click',showPlain);
+ if(plainWanted){showPlain();if(h.indexOf('#p-')===0){const t=document.querySelector(h);if(t)t.scrollIntoView();}}else showGame();}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
+// small console hook: RIFFF.go('music'), RIFFF.open('skills'), RIFFF.plain(), RIFFF.play()
+window.RIFFF={go:goRoom,open:openWindow,plain:showPlain,play:showGame,day:v=>setDay(v!==false,false),music:{play:jukePlay,pause:()=>jukePause(true),get state(){return{idx:J.idx,playing:J.playing,ready:J.ready,failed:J.failed};}},get state(){return{room:G.roomKey,player:player&&{x:player.x,z:player.z,heading:player.heading},near:G.near&&G.near.key,cam:camera&&camera.position.toArray().map(v=>+v.toFixed(2))};},teleport(x,z){if(player){player.x=x;player.z=z;}}};
+})();
+</script>
+</body>
 </html>
