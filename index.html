@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>RIFFF — Rifat Ahammed · UE Dev, Game Designer</title>
-<meta name="description" content="Rifat Ahammed — Unreal Engine developer and game designer. Walk through a small retro castle or read the plain site.">
+<meta name="description" content="Rifat Ahammed — Unreal Engine developer, game designer and founder of the DRIFFFYNS game studio. Walk through a small retro castle or read the plain site.">
 <meta name="theme-color" content="#0d0b1c">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' shape-rendering='crispEdges'%3E%3Crect width='16' height='16' fill='%230d0b1c'/%3E%3Crect x='2' y='7' width='12' height='7' fill='%23c9cec7'/%3E%3Crect x='2' y='4' width='2' height='3' fill='%23c9cec7'/%3E%3Crect x='7' y='4' width='2' height='3' fill='%23c9cec7'/%3E%3Crect x='12' y='4' width='2' height='3' fill='%23c9cec7'/%3E%3Crect x='6' y='10' width='4' height='4' fill='%233d4f47'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,6 +41,7 @@ img{max-width:100%}
 .post h4{margin:10px 0 4px;font-size:15px}
 ul.list{margin:0;padding-left:18px}ul.list li{margin:3px 0}
 .note{color:#4a504a;font-size:13px}
+.df-tag{font-weight:700;color:#3b2f6b}
 .tags{display:flex;flex-wrap:wrap;gap:6px}
 .tag{display:inline-block;padding:3px 10px;background:var(--win);font-weight:700;font-size:14px}
 .prof{display:flex;gap:14px;align-items:center;margin-bottom:12px}
@@ -185,10 +186,11 @@ const D={
   {title:'YouTube',url:'https://www.youtube.com/@rifat.ahammed'}
  ],
  about:[
-  'Hiiiiiiiiiiii, this is Rifff, a game design enthusiast, currently working as the Lead Unreal Developer for Attrito – M7-PRODUCTION LTD. Love to play games, music.',
+  'Hiiiiiiiiiiii, this is Rifff, a game design enthusiast, currently working as the Lead Unreal Developer for Attrito – M7-PRODUCTION LTD. Love to play games, music. I also run DRIFFFYNS, my little indie game studio.',
   "I love to listen to people. That's why I run around, going to different places, meeting different people, and engaging in different activities. To me, everything people do and say seems like part of a big game. We are all NPCs in it. So I run around again..."
  ],
  doing:[
+  {title:'DRIFFFYNS',note:'My game studio — games, leaderboards, game-dev tools',url:'https://drifffyns.com/'},
   {title:'itch.io',note:'Leisure game projects to play with FnF',url:'https://rifff.itch.io/'},
   {title:'ArtStation',note:'Game arts, designs, diagrams',url:'https://riff.artstation.com/'},
   {title:'SoundCloud',note:'Composed tracks with FL Studio',url:'https://soundcloud.com/rifff_at'},
@@ -257,6 +259,44 @@ const D={
   {title:'Token of Appreciation',url:'https://www.canva.com/design/DAGquQRkayM/avwYZliY4zpayCL7mu47mQ/view?utm_content=DAGquQRkayM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h088c43b4a8'},
   {title:'Travel',url:'https://www.canva.com/design/DAGquZqrOys/ep2We0KN4nz1Yg93Hlipbg/view?utm_content=DAGquZqrOys&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6ba6070be0'}
  ],
+ // DRIFFFYNS — my game studio site (drifffyns.com). Shown in the DRIFFFYNS studio room and the plain site.
+ // Each list item: title, note (short line), url. Add/remove items freely; order = display order.
+ drifffyns:{
+  url:'https://drifffyns.com/',
+  tagline:'Small indie studio: browser games, PC games and game-dev tools.',
+  intro:'DRIFFFYNS is my indie game studio and website. It hosts my original games, quick browser games you can play with friends (with online leaderboards and multiplayer rooms), my Unreal Engine PC games, and free tools for game developers.',
+  originals:[
+   {title:'ABYSSEA',note:'Flagship — drift through an endless ocean at night (3D, browser)',url:'https://drifffyns.com/play.html?id=abyssea'},
+   {title:'FRENZYNS',note:'Flagship — online 5v5 knife-only tactics with vision cones',url:'https://drifffyns.com/play.html?id=frenzyns'},
+   {title:'I Know',note:'Puzzle game for Windows (Unreal Engine)',url:'https://drifffyns.com/game.html?id=i-know&from=originals'},
+   {title:'LARUTANREPUS',note:'Medieval maze — find the LAVA STONE (Unreal Engine)',url:'https://drifffyns.com/game.html?id=larutanrepus&from=originals'}
+  ],
+  webgames:[
+   {title:'Pattyn',note:'Online three-card showdown, 3–7 seats',url:'https://drifffyns.com/play.html?id=pattyn'},
+   {title:'DRAWINS',note:'Online draw & guess for 2–10 friends',url:'https://drifffyns.com/play.html?id=drawins'},
+   {title:'AIR CRICKET',note:'Hand cricket for two, online or vs PC',url:'https://drifffyns.com/play.html?id=air-cricket'},
+   {title:'Apex Drift',note:'Top-down F1 drift racing, two buttons',url:'https://drifffyns.com/play.html?id=apex-drift'},
+   {title:'Penalty Golf',note:'Chip the ball over the hills into the goal',url:'https://drifffyns.com/play.html?id=penalty-golf'},
+   {title:'BATTYNS',note:'3D low-poly cricket (prototype)',url:'https://drifffyns.com/play.html?id=battyns'},
+   {title:'Type Drift',note:'Grinding — typing speed test with live WPM',url:'https://drifffyns.com/play.html?id=typing-test'},
+   {title:'Aim Drift',note:'Grinding — aim trainer drills',url:'https://drifffyns.com/play.html?id=aim-trainer'}
+  ],
+  tools:[
+   {title:'UE Log Analyzer',note:'Drop an Unreal log — see what crashed and how to fix it',url:'https://drifffyns.com/tool.html?id=ue-log-analyzer'},
+   {title:'Unreal Debug Kit',note:'Searchable UE5 console commands & profiling workflows',url:'https://drifffyns.com/tool.html?id=unreal-debug-kit'},
+   {title:'Unit Converter',note:'Unreal units, meters, speed, FPS ↔ frame time',url:'https://drifffyns.com/tool.html?id=unit-converter'},
+   {title:'Palette Generator',note:'Color harmonies with Unreal Linear Color export',url:'https://drifffyns.com/tool.html?id=palette-generator'},
+   {title:'FOV Converter',note:'Horizontal ↔ vertical FOV for any aspect ratio',url:'https://drifffyns.com/tool.html?id=fov-converter'},
+   {title:'Task Board',note:'Trello-style to-do board in the browser',url:'https://drifffyns.com/tool.html?id=task-board'},
+   {title:'All tools',note:'Focus timer, resolution helper, dice roller and more',url:'https://drifffyns.com/tools.html'}
+  ],
+  community:[
+   {title:'Discord',note:'Join the DRIFFFYNS server',url:'https://discord.gg/dZtDBhqA5m'},
+   {title:'Leaderboard',note:'Online high scores for the browser games',url:'https://drifffyns.com/leaderboard.html'},
+   {title:'Live stats',note:'Who is online and playing right now',url:'https://drifffyns.com/stats.html'},
+   {title:'Support',note:'Buy me a coffee',url:'https://drifffyns.com/support.html'}
+  ]
+ },
  compose:[
   {title:'Droplet',id:'1965534851',url:'https://soundcloud.com/rifff_at/droplet'},
   {title:'RetroGame Intro',id:'1965534251',url:'https://soundcloud.com/rifff_at/retrogame-intro'},
@@ -277,7 +317,7 @@ const embed=c=>`<div class="embed"><iframe title="${esc(c.title)} on SoundCloud"
 const S={};
 S.welcome={title:'Bulletin Board v1.0',label:'Welcome board',status:'3 posts loaded',html:()=>
   post("Welcome to RIFFF's castle",BY+'09/18/2026','<p>This is the home page of Rifat Ahammed, Unreal Engine developer and game designer, built as a small retro world. The lobby you are standing in is the hub. Each doorway leads to a room, and every board inside a room opens a window like this one.</p>')
- +post('Rooms',BY+'09/16/2026','<ul class="list"><li><b>Profile room</b> (west) — about me, what I\'m doing, contact'+(D.guestbook.enabled?', and a guestbook you can sign':'')+'</li><li><b>Resume room</b> (east) — skills, experience, volunteering, education</li><li><b>Portfolio hall</b> (north) — games, vertical slices, materials, 3D modeling, gallery</li><li><b>Music room</b> (south) — tracks composed in FL Studio; they start playing when you walk in</li></ul>')
+ +post('Rooms',BY+'09/16/2026','<ul class="list"><li><b>Profile room</b> (west) — about me, what I\'m doing, contact'+(D.guestbook.enabled?', and a guestbook you can sign':'')+'</li><li><b>Resume room</b> (east) — skills, experience, volunteering, education</li><li><b>Portfolio hall</b> (north) — games, vertical slices, materials, 3D modeling, gallery</li><li><b>DRIFFFYNS studio</b> (north-east door) — my game studio: original games, browser games, dev tools, Discord</li><li><b>Music room</b> (south) — tracks composed in FL Studio; they start playing when you walk in</li></ul>')
  +post('How to walk',BY+'09/14/2026',TOUCH
    ?'<p>Use the stick to walk and turn. Drag the right side of the screen to look around. Stand near a board and tap E to read it.</p><p>The bar at the bottom jumps straight to a room. The moon button switches day and night. Plain site (top right) shows everything as a normal page.</p>'
    :'<p>W A S D or the arrow keys walk and turn, Shift runs. Drag the mouse to look around, scroll to zoom. Stand near a board and press E to read it.</p><p>N switches day and night, M pauses the music. The bar at the bottom jumps straight to a room. Plain site (top right) shows everything as a normal page.</p>')};
@@ -299,6 +339,13 @@ port('slices','Vertical slices',D.slices,'ArtStation');
 port('materials','Materials',D.materials,'ArtStation');
 port('modeling','3D modeling',D.modeling,'ArtStation');
 port('gallery','Gallery',D.gallery,'Canva');
+const DF=D.drifffyns;
+S.studio={title:'DRIFFFYNS',label:'DRIFFFYNS',status:'Studio info loaded',html:()=>
+  post('DRIFFFYNS',BY+'studio',`<p class="df-tag">${esc(DF.tagline)}</p><p>${esc(DF.intro)}</p><div class="rowbtns"><a class="btn" href="${esc(DF.url)}" target="_blank" rel="noopener">Visit drifffyns.com</a><a class="btn" href="${esc(DF.url)}games.html" target="_blank" rel="noopener">All games</a></div>`)};
+S.originals={title:'Originals',label:'Originals',status:DF.originals.length+' games loaded',html:()=>post('Original games',BY+'DRIFFFYNS',list(DF.originals))};
+S.webgames={title:'Browser games',label:'Browser games',status:DF.webgames.length+' games loaded',html:()=>post('Play in the browser',BY+'DRIFFFYNS','<p class="note">Quick AI-made browser games — multiplayer rooms, PC opponents and online leaderboards.</p>'+list(DF.webgames))};
+S.devtools={title:'Dev tools',label:'Dev tools',status:DF.tools.length+' tools loaded',html:()=>post('Free tools for game devs',BY+'DRIFFFYNS',list(DF.tools))};
+S.community={title:'Community',label:'Community',status:DF.community.length+' links loaded',html:()=>post('Hang out',BY+'DRIFFFYNS',list(DF.community))};
 D.compose.forEach((c,i)=>{S['track'+i]={title:c.title,label:c.title,status:'Now playing',html:()=>post(c.title,BY+'FL Studio',`<p>Now playing in the jukebox. Use the jukebox panel to pause or skip, or ${TOUCH?'tap':'press'} E on another board to switch songs.</p><p class="note">Open on SoundCloud: ${A(c)}</p>`)};});
 S.compose={title:'Compose',label:'Compose',status:D.compose.length+' tracks loaded',html:()=>D.compose.map(c=>post(c.title,BY+'FL Studio',embed(c))).join('')};
 
@@ -338,7 +385,7 @@ function wireGuestbook(root){if(!root)return;const name=root.querySelector('[dat
 /* ---------- rooms ---------- */
 const ROOMS={
  lobby:{name:'Castle lobby',w:36,d:36,H:7,indoor:false,tint:[188,166,158],floor:'tile',
-  doors:[{side:'N',at:0,to:'portfolio',label:'Portfolio hall'},{side:'W',at:0,to:'profile',label:'Profile room'},{side:'E',at:0,to:'resume',label:'Resume room'},{side:'S',at:0,to:'music',label:'Music room'}],
+  doors:[{side:'N',at:0,to:'portfolio',label:'Portfolio hall'},{side:'N',at:9,to:'studio',label:'DRIFFFYNS'},{side:'W',at:0,to:'profile',label:'Profile room'},{side:'E',at:0,to:'resume',label:'Resume room'},{side:'S',at:0,to:'music',label:'Music room'}],
   tips:TOUCH?['Walk into a doorway to enter a room.','The bulletin board ahead explains the castle.','Use the bar below to jump to a room.']:['Walk into a doorway to enter a room.','The bulletin board ahead explains the castle.','Hold Shift to run.']},
  profile:{name:'Profile room',w:22,d:16,H:5,indoor:true,tint:[178,150,118],floor:'wood',
   boards:[{key:'about',side:'N',t:-0.5},{key:'doing',side:'N',t:0.5},{key:'contact',side:'W',t:0},...(D.guestbook.enabled?[{key:'guestbook',side:'E',t:0}]:[])],
@@ -348,6 +395,10 @@ const ROOMS={
   boards:[{key:'skills',side:'W',t:0},{key:'experience',side:'N',t:-0.5},{key:'volunteering',side:'N',t:0.5},{key:'education',side:'E',t:0}],torches:[['S',-0.6],['S',0.6]]},
  portfolio:{name:'Portfolio hall',w:30,d:20,H:6,indoor:true,tint:[142,168,160],floor:'tile',
   boards:[{key:'games',side:'N',t:-0.6},{key:'slices',side:'N',t:0},{key:'materials',side:'N',t:0.6},{key:'modeling',side:'W',t:0},{key:'gallery',side:'E',t:0}],torches:[['S',-0.6],['S',0.6],['W',-0.7],['E',0.7]]},
+ studio:{name:'DRIFFFYNS studio',w:26,d:18,H:6,indoor:true,tint:[120,104,158],floor:'tile',
+  boards:[{key:'originals',side:'N',t:-0.55},{key:'studio',side:'N',t:0},{key:'webgames',side:'N',t:0.55},{key:'devtools',side:'W',t:0},{key:'community',side:'E',t:0}],
+  torches:[['S',-0.6],['S',0.6],['W',-0.75],['E',0.75]],
+  tips:['DRIFFFYNS is my game studio — every board links to drifffyns.com.',TOUCH?'Tap E on a board, then tap a link to play.':'Press E on a board, then click a link to play.','Community board (east wall) has the Discord invite.']},
  music:{name:'Music room',w:20,d:16,H:5,indoor:true,tint:[168,140,170],floor:'wood',
   boards:[{key:'track0',side:'N',t:-0.5},{key:'track1',side:'N',t:0.5},{key:'track2',side:'W',t:0},{key:'track3',side:'E',t:0}],torches:[['S',-0.6],['S',0.6]],
   tips:['Music plays while you are in this room.',TOUCH?'Tap E on a track board to play that song.':'Press E on a track board to play that song.',TOUCH?'The jukebox panel pauses or skips tracks.':'M pauses the music, the jukebox panel skips tracks.']}
@@ -368,12 +419,13 @@ function buildPlain(){
   +win('skills','Skills',S.skills.html(),S.skills.status)
   +win('resume','Resume',S.experience.html()+S.volunteering.html()+S.education.html(),'3 posts loaded')
   +win('portfolio','Portfolio',S.games.html()+S.slices.html()+S.materials.html()+S.modeling.html()+S.gallery.html(),'5 posts loaded')
+  +win('drifffyns','DRIFFFYNS — my game studio',S.studio.html()+S.originals.html()+S.webgames.html()+S.devtools.html()+S.community.html(),'5 posts loaded')
   +win('compose','Music',S.compose.html(),S.compose.status)
   +win('contact','Contact',S.contact.html(),S.contact.status)
   +(D.guestbook.enabled?win('guestbook','Guestbook',S.guestbook.html(),S.guestbook.status):'');
  if(D.guestbook.enabled)wireGuestbook($('#p-guestbook'));
  $('#ptask').innerHTML='<button class="btn play">▶ Play</button>'
-  +[['about','About'],['skills','Skills'],['resume','Resume'],['portfolio','Portfolio'],['compose','Music'],['contact','Contact'],...(D.guestbook.enabled?[['guestbook','Guestbook']]:[])].map(x=>`<a class="btn" href="#p-${x[0]}">${x[1]}</a>`).join('')
+  +[['about','About'],['skills','Skills'],['resume','Resume'],['portfolio','Portfolio'],['drifffyns','DRIFFFYNS'],['compose','Music'],['contact','Contact'],...(D.guestbook.enabled?[['guestbook','Guestbook']]:[])].map(x=>`<a class="btn" href="#p-${x[0]}">${x[1]}</a>`).join('')
   +'<span class="sp"></span><span class="clock" id="clock"></span>';
  const tick=()=>{const c=$('#clock');if(c)c.textContent=new Date().toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});};
  tick();setInterval(tick,30000);
@@ -452,9 +504,10 @@ function wallSeg(side,a,b,c){const w=G.bounds.w,d=G.bounds.d,H=G.bounds.H,len=b-
  if(side==='N')box(len,H,1,m,mid,H/2,-d/2-0.5);else if(side==='S')box(len,H,1,m,mid,H/2,d/2+0.5);
  else if(side==='E')box(1,H,len,m,w/2+0.5,H/2,mid);else box(1,H,len,m,-w/2-0.5,H/2,mid);}
 const DW=3,DH=3.4;
-function wall(side,doorAt,c){const w=G.bounds.w,d=G.bounds.d,H=G.bounds.H,L=(side==='N'||side==='S')?w:d;
- if(doorAt==null){wallSeg(side,-L/2-0.5,L/2+0.5,c);return;}
- wallSeg(side,-L/2-0.5,doorAt-DW/2,c);wallSeg(side,doorAt+DW/2,L/2+0.5,c);
+function wall(side,doorsAt,c){const w=G.bounds.w,d=G.bounds.d,H=G.bounds.H,L=(side==='N'||side==='S')?w:d;
+ const at=[].concat(doorsAt==null?[]:doorsAt).sort((a,b)=>a-b);let from=-L/2-0.5;
+ at.forEach(a=>{wallSeg(side,from,a-DW/2,c);from=a+DW/2;lintel(side,a,c);});wallSeg(side,from,L/2+0.5,c);}
+function lintel(side,doorAt,c){const w=G.bounds.w,d=G.bounds.d,H=G.bounds.H;
  const lh=H-DH,m=mat(c,DW/2.5,lh/2.5);
  if(side==='N')box(DW,lh,1,m,doorAt,DH+lh/2,-d/2-0.5);else if(side==='S')box(DW,lh,1,m,doorAt,DH+lh/2,d/2+0.5);
  else if(side==='E')box(1,lh,DW,m,w/2+0.5,DH+lh/2,doorAt);else box(1,lh,DW,m,-w/2-0.5,DH+lh/2,doorAt);}
@@ -502,8 +555,9 @@ function lobbyExtras(R){const w=G.bounds.w,d=G.bounds.d,H=G.bounds.H,hw=w/2,hd=d
  const mm=mat(bc,1,1);
  for(let i=-hw+3;i<=hw-3;i+=3){box(1.2,1.1,1.2,mm,i,H+0.55,-hd-0.5);box(1.2,1.1,1.2,mm,i,H+0.55,hd+0.5);}
  for(let i=-hd+3;i<=hd-3;i+=3){box(1.2,1.1,1.2,mm,-hw-0.5,H+0.55,i);box(1.2,1.1,1.2,mm,hw+0.5,H+0.55,i);}
- ['N','S'].forEach(s=>{hedge(s,-hw+3.2,-2.4);hedge(s,2.4,hw-3.2);});
- ['E','W'].forEach(s=>{hedge(s,-hd+3.2,-2.4);hedge(s,2.4,hd-3.2);});
+ // hedges along each wall, with a gap at every doorway
+ ['N','S','E','W'].forEach(s=>{const L=(s==='N'||s==='S')?hw:hd;let from=-L+3.2;
+  R.doors.filter(x=>x.side===s).map(x=>x.at).sort((a,b)=>a-b).forEach(a=>{hedge(s,from,a-2.4);from=a+2.4;});hedge(s,from,L-3.2);});
  [[-12,-12],[12,-12],[-12,12],[12,12]].forEach(([x,z])=>tree(x,z));
  welcomeBoard();}
 function makeSky(){const n=800,pos=new Float32Array(n*3),r=mkRand(1234);
@@ -541,7 +595,7 @@ function buildRoom(key){clearWorld();const R=ROOMS[key];G.roomKey=key;G.bounds={
  const fl=new THREE.Mesh(new THREE.PlaneGeometry(w+2,d+2),mat(fc,(w+2)/fr,(d+2)/fr));fl.rotation.x=-Math.PI/2;world.add(fl);
  if(R.indoor){const ce=new THREE.Mesh(new THREE.PlaneGeometry(w+2,d+2),mat(C.dark,(w+2)/4,(d+2)/4));ce.rotation.x=Math.PI/2;ce.position.y=H;world.add(ce);}
  const doors=R.doors||[{side:'S',at:0,to:'lobby',label:'Back to lobby'}];
- ['N','E','S','W'].forEach(side=>{const dr=doors.find(x=>x.side===side);wall(side,dr?dr.at:null,bc);});
+ ['N','E','S','W'].forEach(side=>wall(side,doors.filter(x=>x.side===side).map(x=>x.at),bc));
  doors.forEach(makeDoor);
  (R.boards||[]).forEach(makeBoard);
  (R.torches||[]).forEach(t=>makeTorch(t[0],t[1]));
@@ -618,8 +672,9 @@ const ICON={
  folder:svg([[2,3,5,2],[2,5,12,9],[4,8,8,4,'#c9cec7']]),
  scroll:svg([[4,2,8,12],[6,5,4,1,'#c9cec7'],[6,7,4,1,'#c9cec7'],[6,9,4,1,'#c9cec7']]),
  note:svg([[9,2,2,9],[9,2,5,2],[12,4,2,3],[5,10,6,4]]),
+ star:svg([[7,1,2,4],[1,6,14,3],[4,9,8,2],[3,11,3,3],[10,11,3,3]]),
  help:svg([[5,2,6,2],[10,4,2,3],[7,7,4,2],[7,9,2,2],[7,13,2,2]])};
-function buildBar(){const BAR=[['lobby','Lobby',ICON.castle],['profile','Profile',ICON.person],['portfolio','Portfolio',ICON.folder],['resume','Resume',ICON.scroll],['music','Music',ICON.note],['help','Help',ICON.help]];
+function buildBar(){const BAR=[['lobby','Lobby',ICON.castle],['profile','Profile',ICON.person],['portfolio','Portfolio',ICON.folder],['resume','Resume',ICON.scroll],['music','Music',ICON.note],['studio','DRIFFFYNS',ICON.star],['help','Help',ICON.help]];
  $('#bar .btns').innerHTML=BAR.map(b=>`<button type="button" data-go="${b[0]}">${b[2]}<span>${b[1]}</span></button>`).join('');
  $('#bar').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const k=b.dataset.go;if(k==='help'){if(G.winOpen)closeWindow();else openWindow('welcome');}else goRoom(k);});}
 function buildMenu(){const m=$('#locMenu');m.innerHTML=Object.keys(ROOMS).map(k=>`<button type="button" data-room="${k}">${esc(ROOMS[k].name)}</button>`).join('');

@@ -130,6 +130,22 @@ gallery:[   {title:'Travel', url:'https://www.canva.com/…'}, ... ],
 
 Five plain lists of `{title, url}` (an optional `note` works here too). They become the **Games**, **Vertical slices**, **Materials**, **3D modeling** and **Gallery** boards in the Portfolio hall, and the Portfolio window on the plain site.
 
+### 2.7b DRIFFFYNS (game studio)
+
+```js
+drifffyns:{
+  url:'https://drifffyns.com/',
+  tagline:'Small indie studio: …',
+  intro:'DRIFFFYNS is my indie game studio …',
+  originals:[ {title:'ABYSSEA', note:'Flagship — …', url:'https://drifffyns.com/play.html?id=abyssea'}, ... ],
+  webgames:[  ... ],   // browser games (incl. Grinding)
+  tools:[     ... ],   // game-dev tools
+  community:[ ... ]    // Discord, leaderboard, stats, support
+},
+```
+
+Feeds the **DRIFFFYNS studio** room (door on the north wall of the lobby, right of the Portfolio hall) and the **DRIFFFYNS** window on the plain site. Boards: `studio` (intro + buttons), `originals`, `webgames`, `devtools`, `community`. Links use the live drifffyns.com page ids (`play.html?id=…`, `game.html?id=…`, `tool.html?id=…`) — if a game is renamed on drifffyns.com, update it here too.
+
 ### 2.8 Music tracks (the jukebox)
 
 ```js
@@ -201,13 +217,13 @@ profile:{name:'Profile room', w:22, d:16, H:5, indoor:true, tint:[178,150,118], 
 
 - `w`, `d`, `H` — width, depth and wall height (metres, roughly; the player is about 2 tall).
 - `tint` — RGB colour of the bricks; `floor` is `'wood'` or `'tile'`.
-- `boards` — which windows hang on which wall. `key` is the section name (`about`, `doing`, `contact`, `guestbook`, `skills`, `experience`, `volunteering`, `education`, `games`, `slices`, `materials`, `modeling`, `gallery`, `track0`…). `side` is `N`/`E`/`S`/`W` and `t` is the position along that wall from `-1` (left end) to `1` (right end); keep boards at least `0.4` apart on the same wall.
+- `boards` — which windows hang on which wall. `key` is the section name (`about`, `doing`, `contact`, `guestbook`, `skills`, `experience`, `volunteering`, `education`, `games`, `slices`, `materials`, `modeling`, `gallery`, `studio`, `originals`, `webgames`, `devtools`, `community`, `track0`…). `side` is `N`/`E`/`S`/`W` and `t` is the position along that wall from `-1` (left end) to `1` (right end); keep boards at least `0.4` apart on the same wall.
 - `torches` — decorative lights, same `side`/`t` format.
 - Indoor rooms always get a "Back to lobby" door in the south wall, so don't put a board at `side:'S', t:0`.
 
 **Adding a fifth track board:** add `{key:'track4',side:'W',t:0.6}` to the music room's `boards` and move the existing west board to `t:-0.6`.
 
-**Adding a whole new room:** copy a room block, give it a new key (e.g. `lab:`), then add a doorway to the lobby's `doors` list and a button to the taskbar (search for `function buildBar(` and copy one of the `['profile','Profile',ICON.person]` entries). The lobby has one door per wall already, so a fifth room would need its door on a wall that has one (`at` is the position along that wall, like `t` for boards).
+**Adding a whole new room:** copy a room block, give it a new key (e.g. `lab:`), then add a doorway to the lobby's `doors` list and a button to the taskbar (search for `function buildBar(` and copy one of the `['profile','Profile',ICON.person]` entries). A wall can hold several doors (the north wall has Portfolio at `at:0` and DRIFFFYNS at `at:9`); `at` is the position along the wall in metres from the centre. Keep doors at least 5 apart — the lobby hedges leave a gap around each doorway automatically.
 
 ---
 
